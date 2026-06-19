@@ -1,0 +1,58 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates">
+    <Design.PreviewWith>
+        <templates:Card />
+    </Design.PreviewWith>
+
+    <Style Selector="templates|Card">
+        <Setter Property="Background" Value="{DynamicResource CardBackground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource CardBorder}"/>
+        <Setter Property="SeparatorVisible" Value="true"/>
+        <Setter Property="HeaderSpacing" Value="8"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="12"/>
+        <Setter Property="Padding" Value="16"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="TitleFontSize" Value="16"/>
+        <Setter Property="SubtitleFontSize" Value="12"/>
+
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="{TemplateBinding CornerRadius}"
+                        Padding="{TemplateBinding Padding}"
+                        Margin="{TemplateBinding Margin}">
+                    <StackPanel Spacing="{TemplateBinding HeaderSpacing}">
+
+                        <!-- Header line: Title/subtitle on the left, optional slot on the right -->
+                        
+                            <StackPanel>
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <TextBlock Text="{TemplateBinding Title}"
+                                               FontSize="{TemplateBinding TitleFontSize}" FontWeight="Bold"/>
+                                    <!-- Optional slot (buttons/badges) on the right -->
+                                    <ContentPresenter Grid.Column="1"
+                                                      Content="{TemplateBinding HeaderRight}"
+                                                      HorizontalAlignment="Right"
+                                                      VerticalAlignment="Top"/>
+                                </Grid>
+                                <TextBlock Text="{TemplateBinding Subtitle}"
+                                           FontSize="{TemplateBinding SubtitleFontSize}"
+                                           Foreground="{DynamicResource SecondaryForegroundBrush}"
+                                           Margin="0,4,0,0"/>
+                            </StackPanel>
+
+                        <Separator IsVisible="{TemplateBinding SeparatorVisible}" />
+
+                        <!-- Card-Content -->
+                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                    </StackPanel>
+                </Border>
+
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>

@@ -1,0 +1,94 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:Synapse.GUI.Converters"
+             xmlns:algorithmConfig="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmConfig"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             xmlns:algorithmConfig1="clr-namespace:Synapse.GUI.Views.Controls.AlgorithmConfig"
+             mc:Ignorable="d" d:DesignWidth="800"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmConfig.Nsga2AlgorithmConfigView"
+             x:DataType="algorithmConfig:Nsga2AlgorithmConfigViewModel">
+
+  <UserControl.Resources>
+    <converters:ProbabilityToPercentConverter x:Key="ProbToPercent" />
+  </UserControl.Resources>
+
+  <templates:Card Title="NSGA-II Algorithm Parameters"
+                  Subtitle="Configure the core parameters for your selected algorithm">
+    <StackPanel Spacing="8" Margin="0 8 0 0">
+      <Grid ColumnDefinitions="*,*,*" ColumnSpacing="30">
+
+        <StackPanel Grid.Column="0" Spacing="10">
+          <algorithmConfig1:BaseAlgorithmConfigView/>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Objective Weights (comma-separated)" />
+            <TextBox Text="{Binding ObjectiveImportanceWeights, Mode=TwoWay}"
+                     Watermark="e.g. 0.8, 0.2"
+                     IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Population Size" />
+            <NumericUpDown Value="{Binding PopulationSize, Mode=TwoWay}"
+                           Minimum="2"
+                           Maximum="100000"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding EnableBaseParameter}"/>
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Tournament Size" />
+            <NumericUpDown Value="{Binding TournamentSize, Mode=TwoWay}"
+                           Minimum="2"
+                           Maximum="100"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding !JobActive}"/>
+          </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Spacing="10">
+          <TextBlock FontWeight="SemiBold" Text="Crossover"/>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Crossover Method" />
+            <ComboBox ItemsSource="{Binding AvailableCrossovers}"
+                      SelectedItem="{Binding Crossover, Mode=TwoWay}"
+                      Height="31"
+                      IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Crossover Probability" />
+            <Slider Minimum="0" Maximum="1"
+                    Value="{Binding CrossoverProbability, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <TextBlock FontSize="12" Text="{Binding CrossoverProbability, Converter={StaticResource ProbToPercent}}" />
+          </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Spacing="10">
+          <TextBlock FontWeight="SemiBold" Text="Mutation"/>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Mutation Method" />
+            <ComboBox ItemsSource="{Binding AvailableMutations}"
+                      SelectedItem="{Binding Mutation, Mode=TwoWay}"
+                      Height="31"
+                      IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Mutation Probability" />
+            <Slider Minimum="0" Maximum="1"
+                    Value="{Binding MutationProbability, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <TextBlock FontSize="12" Text="{Binding MutationProbability, Converter={StaticResource ProbToPercent}}" />
+          </StackPanel>
+        </StackPanel>
+      </Grid>
+    </StackPanel>
+  </templates:Card>
+</UserControl>
+

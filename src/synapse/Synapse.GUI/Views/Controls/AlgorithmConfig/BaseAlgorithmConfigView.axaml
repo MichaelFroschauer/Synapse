@@ -1,0 +1,72 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:algorithmConfig="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmConfig"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmConfig.BaseAlgorithmConfigView"
+             x:DataType="algorithmConfig:BaseAlgorithmConfigViewModel">
+    
+    <StackPanel Spacing="10">
+        <TextBlock FontWeight="SemiBold" Text="Basic Parameters"/>
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Max Generations" />
+            <NumericUpDown IsEnabled="{Binding EnableBaseParameter}"
+                           Value="{Binding MaxGenerations, Mode=TwoWay}"
+                           Minimum="1" Maximum="100000"
+                           Classes="theme-outline"/>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Job Name" />
+            <TextBox IsEnabled="{Binding EnableBaseParameter}"
+                     Text="{Binding Name, Mode=TwoWay}"
+                     Classes="theme-outline" />
+        </StackPanel>
+          
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Random Seed" />
+            <NumericUpDown IsEnabled="{Binding EnableBaseParameter}"
+                           Value="{Binding RandomSeed, Mode=TwoWay}"
+                           Classes="theme-outline" />
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Timeout (seconds)" />
+            <NumericUpDown IsEnabled="{Binding EnableBaseParameter}"
+                           Value="{Binding TimeoutSeconds, Mode=TwoWay}"
+                           Minimum="0"
+                           Classes="theme-outline" />
+        </StackPanel>
+          
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Progress Interval" />
+            <NumericUpDown Value="{Binding ProgressInterval, Mode=TwoWay}"
+                           Minimum="1"
+                           Classes="theme-outline" />
+        </StackPanel>
+        
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Similarity Measure (Algorithm)" />
+            <ComboBox ItemsSource="{Binding AvailableAlgorithmSimilarities}"
+                      SelectedItem="{Binding SelectedAlgorithmSimilarity, Mode=TwoWay}"
+                      Height="31"
+                      MaxDropDownHeight="300">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold"/>
+                            <TextBlock Text="{Binding Description}" Opacity="0.75" FontSize="11" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                <ComboBox.SelectionBoxItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding DisplayName}" />
+                    </DataTemplate>
+                </ComboBox.SelectionBoxItemTemplate>
+            </ComboBox>
+        </StackPanel>
+    </StackPanel>
+
+</UserControl>

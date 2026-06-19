@@ -1,0 +1,21 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+
+    <SolidColorBrush x:Key="PrimaryBackground">#0B1220</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowBackground">#07101A</SolidColorBrush>
+    <SolidColorBrush x:Key="CardBackground">#0D1B26</SolidColorBrush>
+    <SolidColorBrush x:Key="CardBorder">#E2E8F0</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryBrush">#3AD97B</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentBrush">#66E1A3</SolidColorBrush>
+    <SolidColorBrush x:Key="ForegroundBrush">#E5EEF2</SolidColorBrush>
+    <SolidColorBrush x:Key="SecondaryForegroundBrush">#9AA9B0</SolidColorBrush>
+    <SolidColorBrush x:Key="BorderBrush">#12202A</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledBrush">#4B585F</SolidColorBrush>
+
+    <system:Double x:Key="CornerRadiusSmall">6</system:Double>
+    <system:Double x:Key="CornerRadiusMedium">10</system:Double>
+
+    <FontFamily x:Key="AppFont">avares://Synapse.GUI/Assets/Fonts/Inter-Regular.ttf#Inter</FontFamily>
+
+</ResourceDictionary>

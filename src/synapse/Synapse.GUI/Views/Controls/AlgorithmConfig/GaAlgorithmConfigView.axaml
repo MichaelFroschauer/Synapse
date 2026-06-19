@@ -1,0 +1,122 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmConfig.GaAlgorithmConfigView"
+             x:DataType="algorithmConfig:GaAlgorithmConfigViewModel"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             xmlns:converters="clr-namespace:Synapse.GUI.Converters"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:algorithmConfig="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmConfig"
+             xmlns:ga="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmConfig.GA"
+             xmlns:algorithmConfig1="clr-namespace:Synapse.GUI.Views.Controls.AlgorithmConfig"
+             d:DesignWidth="800">
+
+  <UserControl.Resources>
+    <converters:ProbabilityToPercentConverter x:Key="ProbToPercent" />
+    
+    <!-- <DataTemplate x:Key="SelectionItemTemplate" x:DataType="geneticSharp:ISelection"> -->
+    <!--   <TextBlock Text="{Binding}" /> -->
+    <!-- </DataTemplate> -->
+  </UserControl.Resources>
+  
+  <UserControl.DataTemplates>
+    <DataTemplate DataType="ga:TournamentSelectionConfigViewModel">
+      <StackPanel Margin="0 10 0 0">
+        <TextBlock Classes="theme-form-control-label" Text="Group Size" />
+        <NumericUpDown Minimum="1" Maximum="100"
+                       Value="{Binding GroupSize, Mode=TwoWay}"
+                       IsEnabled="{Binding !$parent[UserControl].((algorithmConfig:GaAlgorithmConfigViewModel)DataContext).JobActive}" />
+      </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate DataType="ga:GenericSelectionConfigViewModel" />
+  </UserControl.DataTemplates>
+
+  <templates:Card Title="GA Algorithm Parameters"
+                  Subtitle="Configure the core parameters for your selected algorithm">
+    <StackPanel Spacing="8" Margin="0 8 0 0">
+      <Grid ColumnDefinitions="*,*,*" ColumnSpacing="30">
+        
+        <!-- Basic Parameter -->
+        <StackPanel Grid.Column="0" Spacing="10">
+          <algorithmConfig1:BaseAlgorithmConfigView/>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Population Size" />
+            <NumericUpDown IsEnabled="{Binding EnableBaseParameter}" Value="{Binding PopulationSize, Mode=TwoWay}" Minimum="1" Maximum="100000" Classes="theme-outline"/>
+          </StackPanel>
+        </StackPanel>
+
+        <!-- Selection & Crossover -->
+        <StackPanel Grid.Column="1" Spacing="10">
+          <TextBlock FontWeight="SemiBold" Text="Selection &amp; Crossover"/>
+          
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Primary Selection" />
+            <ComboBox ItemsSource="{Binding AvailableSelections}"
+                      SelectedItem="{Binding Selection, Mode=TwoWay}"
+                      Height="31"
+                      MaxDropDownHeight="300"
+                      IsEnabled="{Binding !JobActive}" />
+            <ContentControl Content="{Binding SelectedSelectionConfig}" />
+          </StackPanel>
+          
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Secondary Selection" />
+            <ComboBox ItemsSource="{Binding AvailableSelections}"
+                      SelectedItem="{Binding Selection2, Mode=TwoWay}"
+                      Height="31"
+                      IsEnabled="{Binding !JobActive}" />
+            <ContentControl Content="{Binding SelectedSelection2Config}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Crossover Method" />
+            <ComboBox ItemsSource="{Binding AvailableCrossovers}"
+                      SelectedItem="{Binding Crossover, Mode=TwoWay}"
+                      Height="31"
+                      IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Crossover Probability" />
+            <!-- Slider bound 0..1 with converter to show percent -->
+            <Slider Minimum="0" Maximum="1"
+                    Value="{Binding CrossoverProbability, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <TextBlock FontSize="12" Text="{Binding CrossoverProbability, Converter={StaticResource ProbToPercent}}" />
+          </StackPanel>
+        </StackPanel>
+
+        <!-- Mutation & Advanced -->
+        <StackPanel Grid.Column="2" Spacing="10">
+          <TextBlock FontWeight="SemiBold" Text="Mutation &amp; Advanced"/>
+          
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Mutation Method" />
+            <ComboBox ItemsSource="{Binding AvailableMutations}"
+                      SelectedItem="{Binding Mutation, Mode=TwoWay}"
+                      Height="31"
+                      IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Mutation Probability" />
+            <Slider Minimum="0" Maximum="1"
+                    Value="{Binding MutationProbability, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <TextBlock FontSize="12" Text="{Binding MutationProbability, Converter={StaticResource ProbToPercent}}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Elite Count" />
+            <NumericUpDown Value="{Binding EliteCount, Mode=TwoWay}"
+                           Minimum="0"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+        </StackPanel>
+      </Grid>
+      
+    </StackPanel>
+  </templates:Card>
+</UserControl>

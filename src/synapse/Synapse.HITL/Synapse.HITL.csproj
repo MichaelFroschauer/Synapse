@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Synapse.Problems\Synapse.Problems.csproj" />
+        <ProjectReference Include="..\Synapse.HITL.Scripting\Synapse.HITL.Scripting.csproj" />
+        <ProjectReference Include="..\Synapse.OptimizationCore\Synapse.OptimizationCore.csproj" />
+    </ItemGroup>
+
+</Project>

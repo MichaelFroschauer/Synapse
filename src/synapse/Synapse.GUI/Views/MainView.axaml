@@ -1,0 +1,102 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Synapse.GUI.ViewModels"
+        xmlns:controls="using:Synapse.GUI.Views.Controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1600" d:DesignHeight="900"
+        x:Class="Synapse.GUI.Views.MainView"
+        x:DataType="vm:MainViewModel"
+        Icon="/Assets/synapse-logo.ico"
+        Title="Synapse.GUI">
+
+    <Design.DataContext>
+        <vm:MainViewModel/>
+    </Design.DataContext>
+
+    <Window.Styles>
+        <Style Selector="GridSplitter.sidebar-splitter:pointerover">
+            <Setter Property="Background" Value="#44000000" />
+        </Style>
+        <Style Selector="GridSplitter.sidebar-splitter:pressed">
+            <Setter Property="Background" Value="#66007ACC" />
+        </Style>
+    </Window.Styles>
+
+    <DockPanel LastChildFill="True">
+        <Border Height="30"
+                Background="{DynamicResource PrimaryBackground}"
+                BorderBrush="{DynamicResource BorderBrush}"
+                BorderThickness="1"
+                DockPanel.Dock="Top">
+            <Svg HorizontalAlignment="Left" Path="/Assets/svg/synapse_logo.svg" />
+        </Border>
+
+        <Border Height="25"
+                BorderBrush="{DynamicResource BorderBrush}"
+                BorderThickness="1"
+                DockPanel.Dock="Bottom">
+            <controls:BottomBarView DataContext="{Binding BottomBarVm}" />
+        </Border>
+        
+        <Grid Background="{DynamicResource PrimaryBackground}"
+              ColumnDefinitions="250,1,*,1,350">
+
+            <!-- LEFT SIDEBAR -->
+            <Border Grid.Column="0"
+                    MinWidth="72"
+                    Background="{DynamicResource WindowBackground}"
+                    BorderBrush="{DynamicResource BorderBrush}"
+                    BorderThickness="1">
+                <controls:SidebarLeftView DataContext="{Binding SidebarLeftVm}" />
+            </Border>
+
+            <!-- LEFT SPLITTER -->
+            <GridSplitter Grid.Column="1"
+                          Classes="sidebar-splitter"
+                          Width="1"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          ResizeDirection="Columns"
+                          ResizeBehavior="PreviousAndNext"
+                          ShowsPreview="False" />
+
+            <!-- CENTER CONTENT -->
+            <Border Grid.Column="2"
+                    Background="{DynamicResource PrimaryBackground}"
+                    BorderBrush="{DynamicResource BorderBrush}"
+                    BorderThickness="0 1 0 1">
+                <Grid Margin="5">
+                    <ContentControl Content="{Binding CurrentPage}"
+                                    IsVisible="{Binding HasCurrentPage}" />
+
+                    <StackPanel IsVisible="{Binding !HasCurrentPage}" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="5">
+                        <TextBlock Text="Synapse" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" />
+                        <Svg HorizontalAlignment="Center" Path="/Assets/svg/synapse_logo_2.svg" Width="400" Height="100" />
+                        <TextBlock Text="Powered by algorithms, perfected by humans." FontSize="16" Opacity="0.75" HorizontalAlignment="Center" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- RIGHT SPLITTER -->
+            <GridSplitter Grid.Column="3"
+                          Classes="sidebar-splitter"
+                          Width="1"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          ResizeDirection="Columns"
+                          ResizeBehavior="PreviousAndNext"
+                          ShowsPreview="False" />
+
+            <!-- RIGHT SIDEBAR -->
+            <Border Grid.Column="4"
+                    MinWidth="180"
+                    Background="{DynamicResource WindowBackground}"
+                    BorderBrush="{DynamicResource BorderBrush}"
+                    BorderThickness="1">
+                <controls:SidebarRightView DataContext="{Binding SidebarRightVm}" />
+            </Border>
+
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,119 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             mc:Ignorable="d" d:DesignWidth="600"
+             x:Class="Synapse.GUI.Views.Controls.HitlParametersView"
+             xmlns:controls="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             x:DataType="controls:HitlParametersViewModel">
+    
+        <templates:Card Title="Execution Control"
+                        Subtitle="Control your optimization algorithms">
+            
+            <StackPanel Spacing="30" Margin="10 0 10 0">
+                
+                <!-- Custom Parameter -->
+                <StackPanel Spacing="10">
+                    <Grid ColumnDefinitions="*, Auto" VerticalAlignment="Center">
+                        <TextBlock Grid.Column="0" FontWeight="Bold" VerticalAlignment="Center" TextAlignment="Left">Custom Parameters</TextBlock>
+                        <Button Classes="theme-solid accent" Grid.Column="1">
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <Svg Path="/Assets/svg/plus.svg" Width="12" Height="12" />
+                                <TextBlock>Add Parameter</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                    
+                    <!-- Item 1 -->
+                    <Border Background="{StaticResource HitlCustomParamItemBackground}"
+                            BorderBrush="{StaticResource HitlCustomParamItemBorder}"
+                            BorderThickness="1"
+                            CornerRadius="12"
+                            Padding="8">
+                        <StackPanel Spacing="10">
+                            <Grid ColumnDefinitions="*, Auto, Auto, Auto" VerticalAlignment="Center" ColumnSpacing="10">
+                                <TextBox Grid.Column="0" Classes="theme-outline" HorizontalContentAlignment="Left" Height="31" />
+                                <DropDownButton Grid.Column="1" Classes="theme-soft" HorizontalContentAlignment="Left" Height="31" Width="80" />
+                                <TextBox Grid.Column="2" HorizontalContentAlignment="Left" Height="31" Width="100" />
+                                <Button Grid.Column="3">
+                                    <Svg Path="/Assets/svg/trash.svg" Width="16" Height="16" />
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                    
+                    <!-- Item 2 -->
+                    <Border Background="{StaticResource HitlCustomParamItemBackground}"
+                            BorderBrush="{StaticResource HitlCustomParamItemBorder}"
+                            BorderThickness="1"
+                            CornerRadius="12"
+                            Padding="8">
+                        <StackPanel Spacing="10">
+                            <Grid ColumnDefinitions="*, Auto, Auto, Auto" VerticalAlignment="Center" ColumnSpacing="10">
+                                <TextBox Grid.Column="0" Classes="theme-outline" HorizontalContentAlignment="Left" Height="31" />
+                                <DropDownButton Grid.Column="1" Classes="theme-soft" HorizontalContentAlignment="Left" Height="31" Width="80" />
+                                <TextBox Grid.Column="2" HorizontalContentAlignment="Left" Height="31" Width="100" />
+                                <Button Grid.Column="3">
+                                    <Svg Path="/Assets/svg/trash.svg" Width="16" Height="16" />
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                
+                
+                <!-- Solution Preferences -->
+                <StackPanel Spacing="10">
+                    <Grid ColumnDefinitions="*, Auto" VerticalAlignment="Center">
+                        <TextBlock Grid.Column="0" FontWeight="Bold" VerticalAlignment="Center" TextAlignment="Left">Solution Preferences</TextBlock>
+                        <Button Classes="theme-solid success" Grid.Column="1">
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <Svg Path="/Assets/svg/plus.svg" Width="12" Height="12" />
+                                <TextBlock>Add Preference</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                    
+                    <templates:Card Title="Route Preference"
+                                    HeaderSpacing="0"
+                                    SeparatorVisible="False"
+                                    Background="{StaticResource HitlSolutionPreferenceItemBackground}"
+                                    BorderBrush="{StaticResource HitlSolutionPreferenceItemBorder}">
+                        <templates:Card.HeaderRight>
+                            <Button>
+                                <Svg Path="/Assets/svg/trash.svg" Width="16" Height="16" />
+                            </Button>
+                        </templates:Card.HeaderRight>
+                        
+                        <StackPanel Spacing="10">
+                            <Grid ColumnDefinitions="*, Auto" VerticalAlignment="Center" ColumnSpacing="10">
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Classes="theme-form-control-label" Text="Solution" />
+                                    <TextBox Classes="theme-outline" HorizontalContentAlignment="Left" VerticalAlignment="Center" />
+                                </StackPanel>
+                            
+                                <StackPanel Grid.Column="1" Width="80">
+                                    <TextBlock Classes="theme-form-control-label" Text="Weight" />
+                                    <NumericUpDown Classes="theme-outline" HorizontalContentAlignment="Left" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Grid>
+                        
+                            <StackPanel>
+                                <TextBlock Classes="theme-form-control-label" Text="Description" />
+                                <TextBox Classes="theme-outline" Text="" MaxLines="3" />
+                            </StackPanel>
+                        </StackPanel>
+                    </templates:Card>
+                </StackPanel>
+                
+                <!-- Manual Solution Editors -->
+
+                
+                <!-- Constraints -->
+                
+                
+                <!-- AI Assistant for HITL -->
+            </StackPanel>
+        </templates:Card>
+</UserControl>

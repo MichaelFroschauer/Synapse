@@ -1,0 +1,124 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmResults"
+             xmlns:tsp="clr-namespace:Synapse.GUI.Models.Problems.TSP"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmResults.TspResultView"
+             x:DataType="vm:TspResultViewModel">
+
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="16" VerticalAlignment="Top" HorizontalAlignment="Left"
+                        Margin="6">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="Fitness:" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding Fitness}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="Iteration:" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding Iteration}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <TextBlock Text="Cities:" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding Cities.Count}" />
+                </StackPanel>
+            </StackPanel>
+            
+            <Canvas Grid.Row="1" x:Name="SolutionResultCanvas" Background="Transparent" ClipToBounds="True" MinHeight="700">
+
+                <!-- Polyline for Route -->
+                <Polyline Points="{Binding RoutePoints}"
+                          Stroke="DodgerBlue"
+                          StrokeThickness="2"
+                          StrokeLineCap="Round" />
+                
+                <!-- Arrow markers: one small triangle per segment -->
+                <ItemsControl ItemsSource="{Binding Arrows}"
+                              Width="{Binding Bounds.Width, ElementName=SolutionResultCanvas}"
+                              Height="{Binding Bounds.Height, ElementName=SolutionResultCanvas}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <!-- triangle centered at 0,0; we position & rotate with RenderTransform -->
+                            <Canvas>
+                                <Polygon Points="0,-4  -4,4  4,4"
+                                         Stroke="DodgerBlue"
+                                         Fill="DodgerBlue"
+                                         StrokeThickness="0.1">
+                                    <Polygon.RenderTransform>
+                                        <TransformGroup>
+                                            <!-- rotate the triangle by AngleDegrees -->
+                                            <RotateTransform CenterX="-2" CenterY="-2" Angle="{Binding AngleDegrees}"></RotateTransform>
+                                            <!-- then translate to the target X/Y -->
+                                            <TranslateTransform X="{Binding X}" Y="{Binding Y}" />
+                                        </TransformGroup>
+                                    </Polygon.RenderTransform>
+                                </Polygon>
+                            </Canvas>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                
+                <!-- Start City -->
+                <Ellipse Width="14" Height="14"
+                         Fill="Green"
+                         Stroke="Green"
+                         StrokeThickness="1"
+                         Canvas.Left="{Binding StartCity.X}"
+                         Canvas.Top="{Binding StartCity.Y}">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform X="-7" Y="-7"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+
+                <!-- Cities -->
+                <ItemsControl ItemsSource="{Binding Cities}"
+                              Canvas.Left="0" Canvas.Top="0"
+                              Width="{Binding Bounds.Width, ElementName=SolutionResultCanvas}"
+                              Height="{Binding Bounds.Height, ElementName=SolutionResultCanvas}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="tsp:City">
+                            <Canvas>
+                                
+                                <Ellipse Width="8" Height="8"
+                                         Fill="DarkRed"
+                                         Stroke="DarkRed"
+                                         StrokeThickness="1"
+                                         Canvas.Left="{Binding DisplayX}"
+                                         Canvas.Top="{Binding DisplayY}">
+                                    <Ellipse.RenderTransform>
+                                        <TranslateTransform X="-4" Y="-4"/>
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+
+                                <TextBlock Text="{Binding Id}" FontSize="12"
+                                           Canvas.Left="{Binding DisplayX}"
+                                           Canvas.Top="{Binding DisplayY}"
+                                           Margin="8,-8,0,0" />
+                            </Canvas>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Canvas>
+        </Grid>
+    </ScrollViewer>
+    
+</UserControl>

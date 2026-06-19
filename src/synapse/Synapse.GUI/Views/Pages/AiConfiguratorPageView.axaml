@@ -1,0 +1,210 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="700"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Pages"
+             xmlns:utils="clr-namespace:Synapse.GUI.Utils"
+             x:Class="Synapse.GUI.Views.Pages.AiConfiguratorPageView"
+             x:DataType="vm:AiConfiguratorPageViewModel">
+
+    <Grid RowDefinitions="Auto,*,Auto,Auto">
+
+        <!-- ═══ Row 0 — Job context bar ═══ -->
+        <WrapPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <Border Margin="8,8,8,4" Padding="10,6"
+                    CornerRadius="6"
+                    Background="{DynamicResource PrimaryBackground}"
+                    BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1">
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="Algorithm:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <TextBlock Text="{Binding AlgorithmName}" VerticalAlignment="Center" FontSize="12" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="Problem:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <TextBlock Text="{Binding ProblemName}" VerticalAlignment="Center" FontSize="12" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="Status:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <TextBlock Text="{Binding JobStatus}" VerticalAlignment="Center" FontSize="12" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="Best Fitness:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <TextBlock Text="{Binding BestFitness, StringFormat={}{0:G6}, TargetNullValue=—}" VerticalAlignment="Center" FontSize="12" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="Iteration:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <TextBlock Text="{Binding Iteration}" VerticalAlignment="Center" FontSize="12" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,0,0">
+                        <TextBlock Text="AI Scripts:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <TextBlock Text="{Binding AiScriptCount}" VerticalAlignment="Center" FontSize="12" />
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+            
+            <Border Margin="8,8,8,4" Padding="10,6"
+                    CornerRadius="6"
+                    Background="{DynamicResource PrimaryBackground}"
+                    BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1" VerticalAlignment="Center">
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="AI Model:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <ComboBox ItemsSource="{Binding AvailableAiModels}"
+                                  SelectedItem="{Binding CurrentAiModel, Mode=TwoWay}"
+                                  MinWidth="100" FontSize="10" MaxDropDownHeight="300" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,18,0">
+                        <TextBlock Text="Tokens:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <NumericUpDown Value="{Binding AiTokens, Mode=TwoWay}" FontSize="10" Increment="1" FormatString="0" Minimum="1" Maximum="30000" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,0,0">
+                        <TextBlock Text="Temperature:" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="12" />
+                        <NumericUpDown Value="{Binding AiTemperature, Mode=TwoWay}" FontSize="10" Increment="0.05" FormatString="0.00" Minimum="0.0" Maximum="1.0" />
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+        </WrapPanel>
+
+        <!-- ═══ Row 1 — Full-width solution views with tabs ═══ -->
+        <Border Grid.Row="1" Margin="8,4"
+                CornerRadius="8"
+                Background="{DynamicResource CardBackground}"
+                BorderBrush="{DynamicResource CardBorder}" BorderThickness="1"
+                Padding="4">
+            <TabControl TabStripPlacement="Top">
+                <TabItem>
+                    <TabItem.Header>
+                        <TextBlock Text="Current Best Solution" VerticalAlignment="Center" />
+                    </TabItem.Header>
+                    <ContentControl Content="{Binding CurrentProblemResults}" />
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <TextBlock Text="Global Best Solution" VerticalAlignment="Center" />
+                    </TabItem.Header>
+                    <ContentControl Content="{Binding BestProblemResults}" />
+                </TabItem>
+            </TabControl>
+        </Border>
+
+        <!-- ═══ Row 2 — Collapsible AI scripts panel ═══ -->
+        <Border Grid.Row="2" Margin="8,4" CornerRadius="8"
+                Background="{DynamicResource CardBackground}"
+                BorderBrush="{DynamicResource CardBorder}" BorderThickness="1"
+                Padding="4">
+            <Expander HorizontalAlignment="Stretch">
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBlock Text="AI-Generated Scripts" FontWeight="Bold" FontSize="13" VerticalAlignment="Center" />
+                        <Border Background="{DynamicResource BadgeSuccessBackground}" CornerRadius="8" Padding="6,1"
+                                VerticalAlignment="Center">
+                            <TextBlock Text="{Binding AiScriptCount}" FontSize="11" FontWeight="SemiBold"
+                                       Foreground="{DynamicResource BadgeSuccessForeground}" />
+                        </Border>
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel>
+                    <!-- Empty state -->
+                    <TextBlock IsVisible="{Binding NoAiScripts}"
+                               Text="No AI scripts yet. Send a prompt below to generate optimization scripts."
+                               Foreground="{DynamicResource SecondaryForegroundBrush}"
+                               FontSize="12" TextWrapping="Wrap" Margin="4,4,4,8" />
+
+                    <ItemsControl x:Name="ExpandersList"
+                                  utils:AccordionBehavior.IsAccordion="True"
+                                  ItemsSource="{Binding AiScripts}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="0,0,0,4"
+                                        CornerRadius="6"
+                                        Background="{DynamicResource SubtleCardBackground}"
+                                        BorderBrush="{DynamicResource SubtleCardBorder}" BorderThickness="1"
+                                        Padding="4">
+                                    <Expander Margin="0">
+                                        <Expander.Header>
+                                            <TextBlock Text="{Binding Label}" FontWeight="SemiBold" FontSize="12" />
+                                        </Expander.Header>
+                                        <StackPanel Spacing="4" Margin="4">
+                                            <Border Background="{DynamicResource PrimaryBackground}"
+                                                    BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1"
+                                                    CornerRadius="4" Padding="6,4">
+                                                <TextBlock Text="{Binding Subtitle}" FontSize="11"
+                                                           Foreground="{DynamicResource SecondaryForegroundBrush}" />
+                                            </Border>
+                                            <SelectableTextBlock Text="{Binding Value}" FontFamily="Consolas,Menlo,Monospace"
+                                                                 FontSize="11" TextWrapping="Wrap" />
+                                        </StackPanel>
+                                    </Expander>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <!-- ═══ Row 3 — Chat input bar ═══ -->
+        <Border Grid.Row="3" Margin="8,4,8,8" Padding="12"
+                CornerRadius="10"
+                Background="{DynamicResource CardBackground}"
+                BorderBrush="{DynamicResource CardBorder}" BorderThickness="1">
+            <DockPanel>
+
+                <!-- Loading indicator -->
+                <Border DockPanel.Dock="Top" Margin="0,0,0,8"
+                        IsVisible="{Binding IsGenerating}"
+                        Background="{DynamicResource AlertWarningBackground}"
+                        CornerRadius="6" Padding="8,6">
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <ProgressBar IsIndeterminate="True" Width="100" Height="4" VerticalAlignment="Center" />
+                        <TextBlock Text="Generating script…" FontSize="12"
+                                   Foreground="{DynamicResource AlertWarningForeground}" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Border>
+
+                <!-- Error display -->
+                <Border DockPanel.Dock="Top" Margin="0,0,0,8"
+                        IsVisible="{Binding HasError}"
+                        Background="{DynamicResource HitlConstraintBackground}"
+                        BorderBrush="{DynamicResource HitlConstraintBorder}" BorderThickness="1"
+                        CornerRadius="6" Padding="8,6">
+                    <TextBlock Text="{Binding ErrorMessage}" FontSize="12" TextWrapping="Wrap"
+                               Foreground="#991B1B" />
+                </Border>
+
+                <!-- Input row -->
+                <Grid ColumnDefinitions="*,Auto"
+                      IsVisible="{Binding HasOpenRouterKey}">
+                    <TextBox Grid.Column="0"
+                             Name="PromptTextBox"
+                             Text="{Binding ChatPrompt, Mode=TwoWay}"
+                             Watermark="Describe how the optimization or solution should change…"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             MinHeight="44"
+                             MaxHeight="160"
+                             Margin="0,0,10,0"
+                             ScrollViewer.AllowAutoHide="True"
+                             IsEnabled="{Binding !IsGenerating}"
+                             KeyUp="PromptTextBox_KeyUp" />
+
+                    <Button Grid.Column="1"
+                            Classes="theme-solid success"
+                            Command="{Binding SendPromptCommand}"
+                            IsEnabled="{Binding CanSend}"
+                            Width="100"
+                            Height="44"
+                            VerticalAlignment="Bottom">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
+                            <Svg Path="/Assets/svg/send.svg" Width="16" Height="16" />
+                            <TextBlock Text="Send" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+            </DockPanel>
+        </Border>
+    </Grid>
+</UserControl>

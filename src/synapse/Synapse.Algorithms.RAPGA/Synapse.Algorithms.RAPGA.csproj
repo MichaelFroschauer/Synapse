@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Synapse.Algorithms.GeneticAlgorithm\Synapse.Algorithms.GeneticAlgorithm.csproj" />
+      <ProjectReference Include="..\Synapse.OptimizationCore\Synapse.OptimizationCore.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160" role="img" aria-labelledby="title desc">
+  <title id="title">Synapse - Logo</title>
+  <desc id="desc">Einfaches, modernes Logo: stilisiertes 'S' aus zwei Knoten und geschwungener Verbindung neben dem Wort 'synapse'.</desc>
+
+  <!-- Hintergrund transparent -->
+  <rect width="100%" height="100%" fill="none"></rect>
+
+  <!-- Icon (links): zwei Knoten verbunden durch ein geschwungenes 'S' -->
+  <g transform="translate(28,20)" aria-hidden="true">
+    <!-- linke node -->
+    <circle cx="40" cy="60" r="10" fill="#2B6DF6"></circle>
+    <!-- rechte node -->
+    <circle cx="140" cy="60" r="10" fill="#2B6DF6"></circle>
+
+    <!-- S-förmige Verbindung -->
+    <path d="M48 55 C84 20, 116 100, 152 65" fill="none" stroke="#2B6DF6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.98"></path>
+
+    <!-- kleiner akzent (menschlicher Eingriff) -->
+    <circle cx="106" cy="46" r="6.5" fill="#FF8A42"></circle>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="200" y="98" font-family="Inter, Roboto, Arial, sans-serif" font-weight="600" font-size="56" fill="#0F1724" text-rendering="optimizeLegibility">
+    synapse
+  </text>
+
+  <!-- Optional: kleine Balance-Linie unter dem Wort (subtil) -->
+  <rect x="200" y="108" width="140" height="2" rx="1" fill="#E6EEF9" opacity="0.9"></rect>
+</svg>

@@ -1,0 +1,99 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             xmlns:converters="clr-namespace:Synapse.GUI.Converters"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.SolutionPreferenceSelectorView"
+             x:DataType="vm:SolutionPreferenceSelectorViewModel">
+    
+    <UserControl.Resources>
+        <converters:ProbabilityToPercentConverter x:Key="ProbToPercent" />
+    </UserControl.Resources>
+    
+    <StackPanel>
+        
+        <Grid ColumnDefinitions="*,*">
+            <StackPanel Grid.Column="0">
+                <TextBlock Classes="theme-form-control-label" Text="Ask user after number of iterations" />
+                <NumericUpDown Value="{Binding SolutionChoiceIteration, Mode=TwoWay}" Classes="theme-outline" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="16 0 0 0">
+                <TextBlock Classes="theme-form-control-label" Text="Solution Similarity Preference Weight" />
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10" VerticalAlignment="Center">
+                    <Slider Grid.Column="0"
+                            Minimum="-2"
+                            Maximum="2"
+                            TickFrequency="0.05"
+                            Value="{Binding SolutionSimilarityPreferenceWeight, Mode=TwoWay}" />
+                    <NumericUpDown Grid.Column="1"
+                                   Width="110"
+                                   Value="{Binding SolutionSimilarityPreferenceWeight, Mode=TwoWay}"
+                                   Minimum="-2"
+                                   Maximum="2"
+                                   Increment="0.05" />
+                </Grid>
+                <TextBlock Text="Typical: 0.2-1.2 (Factor = Similarity * Weight)" Opacity="0.72" FontSize="12" />
+            
+            </StackPanel>
+        </Grid>
+        
+        <StackPanel Margin="0 8 0 8" IsVisible="{Binding ShowObjectiveWeightControls}">
+            <TextBlock Classes="theme-form-control-label" Text="Runtime Objective Weights (comma-separated)" />
+            <TextBox Text="{Binding RuntimeObjectiveWeights, Mode=TwoWay}"
+                     Watermark="e.g. 0.8, 0.2, 0.1" />
+            <TextBlock FontSize="12" Opacity="0.75"
+                       Text="Higher values increase objective priority. Changes are applied during runtime."/>
+        </StackPanel>
+        
+        <StackPanel Margin="0 8 0 8">
+            <TextBlock Classes="theme-form-control-label" Text="Solution Similarity Calculators" />
+            <ComboBox ItemsSource="{Binding AvailableSolutionSimilarities}"
+                      SelectedItem="{Binding SelectedSolutionSimilarity, Mode=TwoWay}"
+                      Height="31"
+                      MaxDropDownHeight="300">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold"/>
+                            <TextBlock Text="{Binding Description}" Opacity="0.75" FontSize="12" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                
+                <ComboBox.SelectionBoxItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding DisplayName}" />
+                    </DataTemplate>
+                </ComboBox.SelectionBoxItemTemplate>
+            </ComboBox>
+        </StackPanel>
+                        
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*" Margin="0 8 0 0"
+              IsVisible="{Binding SolutionChoiceAvailable}">
+            <TextBlock Grid.Row="0" Grid.Column="0" Classes="theme-form-control-label" Text="Solution 1" />
+            <ContentControl Grid.Row="1" Grid.Column="0" Content="{Binding SolutionChoice1}" />
+            <TextBlock Grid.Row="0" Grid.Column="1" Classes="theme-form-control-label" Text="Solution 2" />
+            <ContentControl Grid.Row="1" Grid.Column="1" Content="{Binding SolutionChoice2}" />
+        </Grid>
+        
+        <StackPanel IsVisible="{Binding SolutionChoiceAvailable}">
+            <TextBlock Classes="theme-form-control-label" Text="Solution Choice" />
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button Content="Solution 1" Command="{Binding UserSelectSolutionCommand}">
+                    <Button.CommandParameter>
+                        <x:Int32>1</x:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Button Content="Solution 2" Command="{Binding UserSelectSolutionCommand}">
+                    <Button.CommandParameter>
+                        <x:Int32>2</x:Int32>
+                    </Button.CommandParameter>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+
+</UserControl>

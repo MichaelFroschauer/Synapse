@@ -1,0 +1,88 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             xmlns:descriptors="clr-namespace:Synapse.Reflection.Descriptors;assembly=Synapse.Reflection"
+             xmlns:controls1="clr-namespace:Synapse.GUI.Views.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmSelectionView"
+             x:DataType="controls:AlgorithmSelectionViewModel">
+
+    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Spacing="10" Margin="20">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="3">
+            <Svg Path="/Assets/svg/roboter.svg" Width="18" Height="18" />
+            <TextBlock Classes="theme-text-body size-lg" FontWeight="Bold"> Algorithm Selection</TextBlock>
+        </StackPanel>
+
+        <!-- algorithm selection -->
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Algorithm Type" />
+            <ComboBox ItemsSource="{Binding Algorithms}"
+                      SelectedItem="{Binding SelectedAlgorithmType, Mode=TwoWay}"
+                      Height="40"
+                      Classes="theme-soft"
+                      HorizontalContentAlignment="Left"
+                      MaxDropDownHeight="300"
+                      PlaceholderText="Choose Algorithm"
+                      IsEnabled="{Binding JobNotActive}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate x:DataType="descriptors:AlgorithmDescriptor">
+                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+
+        <!-- problem type selection -->
+        <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Problem Type" />
+            <ComboBox ItemsSource="{Binding Problems}"
+                      SelectedItem="{Binding SelectedProblem, Mode=TwoWay}"
+                      Height="40"
+                      Classes="theme-soft"
+                      HorizontalContentAlignment="Left"
+                      MaxDropDownHeight="300"
+                      PlaceholderText="Choose Problem Type"
+                      IsEnabled="{Binding JobNotActive}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate x:DataType="descriptors:ProblemDescriptor">
+                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+
+        <!-- problem instance selection -->
+        <Grid IsVisible="{Binding ProblemInstanceSelected}"
+              ColumnDefinitions="*,Auto">
+            <Grid Grid.Column="0" RowDefinitions="Auto,Auto" HorizontalAlignment="Stretch">
+                <TextBlock Grid.Row="0" Classes="theme-form-control-label" Text="Problem Instance" />
+                <ComboBox Grid.Row="1"
+                          ItemsSource="{Binding ProblemInstances}"
+                          SelectedItem="{Binding SelectedProblemInstance, Mode=TwoWay}"
+                          Height="40"
+                          Classes="theme-soft"
+                          HorizontalContentAlignment="Left"
+                          MaxDropDownHeight="300"
+                          PlaceholderText="Choose Problem Instance"
+                          IsEnabled="{Binding JobNotActive}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate x:DataType="descriptors:ProblemInstanceDescriptor">
+                            <TextBlock Text="{Binding Name}" VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </Grid>
+            <controls1:PropertyEditorPanel
+                Grid.Column="1"
+                Properties="{Binding SelectedUserSettableProperties}"
+                ValueChangedCommand="{Binding PropertyValueChangedCommand}"
+                LayoutKind="Stack"
+                Orientation="Horizontal"
+                Spacing="16"
+                ItemMargin="0"/>
+        </Grid>
+        
+    </StackPanel>
+</UserControl>

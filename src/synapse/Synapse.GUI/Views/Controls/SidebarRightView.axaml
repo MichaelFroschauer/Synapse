@@ -1,0 +1,58 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Synapse.GUI.Views.Controls.SidebarRightView"
+             xmlns:controls="clr-namespace:Synapse.GUI.Views.Controls"
+             xmlns:vm1="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             x:DataType="vm1:SidebarRightViewModel">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Spacing="10" Margin="16">
+            <TextBlock Classes="theme-text-body size-lg" FontWeight="Bold" Text="Quick Actions" />
+            <Grid HorizontalAlignment="Stretch" ColumnSpacing="8" RowSpacing="8" ColumnDefinitions="*,*">
+                <Button Classes="theme-solid" Grid.Column="0" Height="40"
+                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Command="{Binding StartPauseAlgorithmSelectionCommand}">
+                    <StackPanel Orientation="Horizontal" Spacing="4">
+                        <Svg Path="/Assets/svg/start.svg" Width="16" Height="16" />
+                        <TextBlock>Start/Pause</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Classes="theme-solid danger" Grid.Column="1" Height="40"
+                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Command="{Binding StopAlgorithmSelectionCommand}">
+                    <StackPanel Orientation="Horizontal" Spacing="4">
+                        <Svg Path="/Assets/svg/pause.svg" Width="16" Height="16" />
+                        <TextBlock>Stop</TextBlock>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid HorizontalAlignment="Stretch" ColumnSpacing="8" RowSpacing="8" ColumnDefinitions="*,*,*">
+                <Button Classes="theme-solid success" Grid.Column="0" Height="36"
+                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Command="{Binding StartAllAlgorithmsCommand}">
+                    <TextBlock>Start all</TextBlock>
+                </Button>
+                <Button Classes="theme-solid warning" Grid.Column="1" Height="36"
+                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Command="{Binding PauseAllAlgorithmsCommand}">
+                    <TextBlock>Pause all</TextBlock>
+                </Button>
+                <Button Classes="theme-solid danger" Grid.Column="2" Height="36"
+                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Command="{Binding StopAllAlgorithmsCommand}">
+                    <TextBlock>Stop all</TextBlock>
+                </Button>
+            </Grid>
+        </StackPanel>
+
+        <Separator Grid.Row="1" />
+
+        <controls:RunningJobsView Grid.Row="2" DataContext="{Binding RunningJobsVm}" />
+    </Grid>
+</UserControl>

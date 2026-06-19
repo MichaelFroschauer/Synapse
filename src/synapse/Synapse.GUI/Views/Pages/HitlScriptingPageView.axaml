@@ -1,0 +1,233 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Pages"
+             xmlns:avaloniaEdit="https://github.com/avaloniaui/avaloniaedit"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Pages.HitlScriptingPageView"
+             x:DataType="vm:HitlScriptingPageViewModel">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Spacing="8">
+            <templates:Card Title="Scripting"
+                            Subtitle="Scripts can be created here. They can then be compiled and executed manually, or automatically invoked by the optimization algorithm. The Execute Once checkbox controls whether the script is called only once or during every iteration of the optimization process.">
+
+                <StackPanel Spacing="6" Margin="8">
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBox HorizontalAlignment="Left"
+                                 Classes="theme-outline"
+                                 Watermark="Script Name"
+                                 Text="{Binding ScriptName}"
+                                 Width="450" />
+                        <CheckBox IsChecked="{Binding ScriptExecuteOnce}">Execute Script Once</CheckBox>
+                    </StackPanel>
+
+                    <avaloniaEdit:TextEditor x:Name="Editor"
+                                             Options="{Binding TextEditorOptions}"
+                                             ShowLineNumbers="True"
+                                             Document="{Binding EditorDocument}"
+                                             FontFamily="Cascadia Code,Consolas,Menlo,Monospace"
+                                             Height="500"
+                                             IsEnabled="{Binding IsNotCompiling}" />
+
+                    <!-- Compile error block -->
+                    <Border Background="#FFF5F5" CornerRadius="4" Padding="6"
+                            IsVisible="{Binding ShowCompileErrorText}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Compiler-Output:" FontWeight="Bold" Foreground="DarkRed"
+                                       Margin="0,0,0,6" />
+                            <TextBox Grid.Row="1"
+                                     Text="{Binding CompileErrorText}"
+                                     IsReadOnly="True"
+                                     AcceptsReturn="True"
+                                     TextWrapping="Wrap"
+                                     MaxHeight="200"
+                                     Foreground="DarkRed" />
+                        </Grid>
+                    </Border>
+
+                    <!-- Compile Progress -->
+                    <Border IsVisible="{Binding IsCompiling}"
+                            HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <StackPanel Spacing="8">
+                            <TextBlock Text="Compiling…" FontWeight="Bold" />
+                            <ProgressBar IsIndeterminate="True" Height="6" />
+                        </StackPanel>
+                    </Border>
+
+                    <!-- buttons -->
+                    <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Left">
+
+                        <Button Margin="0 0 8 0"
+                                Classes="theme-solid primary"
+                                Command="{Binding CompileRegisterCommand}"
+                                IsEnabled="{Binding CanCompile}">
+                            <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                                <Svg Path="/Assets/svg/send.svg" Width="18" Height="18" />
+                                <TextBlock>Compile and Register</TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Margin="0 0 8 0"
+                                Classes="theme-solid primary"
+                                Command="{Binding CompileExecuteCommand}"
+                                IsEnabled="{Binding CanCompile}">
+                            <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                                <Svg Path="/Assets/svg/send.svg" Width="18" Height="18" />
+                                <TextBlock>Compile and Execute</TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Margin="0 0 8 0"
+                                Classes="theme-solid danger"
+                                Command="{Binding ClearCompileErrorCommand}"
+                                IsVisible="{Binding ShowCompileErrorText}">
+                            <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                                <Svg Path="/Assets/svg/trash.svg" Width="18" Height="18" />
+                                <TextBlock>Clear Errors</TextBlock>
+                            </StackPanel>
+                        </Button>
+                        
+                        <TextBlock IsVisible="{Binding !IsJobSelected}"
+                                   VerticalAlignment="Center" Foreground="DarkRed">
+                             Compile deactivated - No job selected.
+                        </TextBlock>
+
+                    </StackPanel>
+                </StackPanel>
+            </templates:Card>
+
+            <Border>
+                <templates:Card Title="Scripts of this Job"
+                                Subtitle="Scripts that are currently executed in for this run.">
+                    <ItemsControl ItemsSource="{Binding ScriptsOfCurrentJob}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Expander Margin="0,4,0,4">
+                                    <Expander.Header>
+                                        <Grid ColumnDefinitions="Auto,Auto,Auto,*" VerticalAlignment="Center"
+                                              Margin="4">
+                                            <Button Grid.Column="0"
+                                                    Margin="0 0 8 0"
+                                                    Classes="theme-solid danger"
+                                                    Command="{Binding $parent[Border].((vm:HitlScriptingPageViewModel)DataContext).RemoveScriptFromCurrentJobCommand}"
+                                                    CommandParameter="{Binding}">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                            VerticalAlignment="Center" Spacing="3">
+                                                    <Svg Path="/Assets/svg/trash.svg" Width="18" Height="18" />
+                                                    <TextBlock>Remove</TextBlock>
+                                                </StackPanel>
+                                            </Button>
+
+                                            <Button Grid.Column="1"
+                                                    Margin="0 0 8 0"
+                                                    Classes="theme-solid"
+                                                    Command="{Binding $parent[Border].((vm:HitlScriptingPageViewModel)DataContext).ExecuteScriptForJobCommand}"
+                                                    CommandParameter="{Binding}"
+                                                    IsVisible="{Binding ExecutionPossible}">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                            VerticalAlignment="Center" Spacing="3">
+                                                    <Svg Path="/Assets/svg/send.svg" Width="18" Height="18" />
+                                                    <TextBlock>Execute</TextBlock>
+                                                </StackPanel>
+                                            </Button>
+                                            <Button Grid.Column="1"
+                                                    Margin="0 0 8 0"
+                                                    Classes="theme-solid"
+                                                    CommandParameter="{Binding}"
+                                                    IsVisible="{Binding !ExecutionPossible}"
+                                                    IsEnabled="False">
+                                                <TextBlock>Executed</TextBlock>
+                                            </Button>
+
+                                            <Border Grid.Column="2"
+                                                    Background="{StaticResource BadgeSuccessBackground}"
+                                                    CornerRadius="10"
+                                                    Padding="6,2"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Foreground="{StaticResource BadgeSuccessForeground}"
+                                                               FontWeight="SemiBold" FontSize="14">
+                                                        Count:
+                                                    </TextBlock>
+                                                    <TextBlock Text="{Binding ExecutionCount}"
+                                                               Foreground="{StaticResource BadgeSuccessForeground}"
+                                                               FontWeight="SemiBold" FontSize="14" />
+                                                </StackPanel>
+                                            </Border>
+
+                                            <TextBlock Grid.Column="3"
+                                                       Text="{Binding Script.Name}"
+                                                       FontWeight="SemiBold"
+                                                       Margin="8,0,4,0"
+                                                       VerticalAlignment="Center" />
+                                        </Grid>
+                                    </Expander.Header>
+
+                                    <StackPanel Margin="8" Spacing="8">
+                                        <TextBlock Text="Script" FontWeight="Bold" />
+                                        <TextBlock Text="{Binding Script.Id}" FontSize="9" />
+                                        <TextBlock IsVisible="{Binding Script.ExecuteOnce}" Text="Execution: ONCE" />
+                                        <TextBlock IsVisible="{Binding !Script.ExecuteOnce}" Text="Execution: MULTIPLE" />
+                                        <TextBox Text="{Binding Script.ScriptText}"
+                                                 IsReadOnly="True"
+                                                 BorderThickness="0"
+                                                 Background="Transparent"
+                                                 TextWrapping="Wrap"
+                                                 AcceptsReturn="True" />
+                                    </StackPanel>
+                                </Expander>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </templates:Card>
+            </Border>
+
+            <Border>
+                <templates:Card Title="Available Scripts"
+                                Subtitle="Scripts that are loaded in this or any other optimization run but are currently not executed in for this run.">
+                    <ItemsControl ItemsSource="{Binding Scripts}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Expander Margin="0,4,0,4">
+                                    <Expander.Header>
+                                        <Grid ColumnDefinitions="Auto,*,Auto" VerticalAlignment="Center" Margin="4">
+                                            <Button Grid.Column="0"
+                                                    Margin="0 0 8 0"
+                                                    Classes="theme-solid success"
+                                                    Command="{Binding $parent[Border].((vm:HitlScriptingPageViewModel)DataContext).AddScriptToCurrentJobCommand}"
+                                                    CommandParameter="{Binding}">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                            VerticalAlignment="Center" Spacing="3">
+                                                    <Svg Path="/Assets/svg/plus.svg" Width="18" Height="18" />
+                                                    <TextBlock>Add</TextBlock>
+                                                </StackPanel>
+                                            </Button>
+                                            <TextBlock Grid.Column="1"
+                                                       Text="{Binding Name}"
+                                                       FontWeight="SemiBold"
+                                                       Margin="8,0,4,0"
+                                                       VerticalAlignment="Center" />
+                                        </Grid>
+                                    </Expander.Header>
+                                    <StackPanel Margin="8" Spacing="8">
+                                        <TextBlock Text="Script" FontWeight="Bold" />
+                                        <TextBlock Text="{Binding Id}" FontSize="9" />
+                                        <TextBlock Text="{Binding ScriptText}" TextWrapping="Wrap" />
+                                    </StackPanel>
+                                </Expander>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </templates:Card>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

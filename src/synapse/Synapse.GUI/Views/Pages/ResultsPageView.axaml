@@ -1,0 +1,209 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="700"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Pages"
+             xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
+             xmlns:skiaSharpView="clr-namespace:LiveChartsCore.SkiaSharpView;assembly=LiveChartsCore.SkiaSharpView"
+             x:Class="Synapse.GUI.Views.Pages.ResultsPageView"
+             x:DataType="vm:ResultsPageViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="GridSplitter.ChartSplitter">
+            <Setter Property="Background" Value="#33000000"/>
+        </Style>
+
+        <Style Selector="GridSplitter.ChartSplitter:pointerover">
+            <Setter Property="Background" Value="#55000000"/>
+        </Style>
+
+        <Style Selector="GridSplitter.ChartSplitter:pressed">
+            <Setter Property="Background" Value="#77007ACC"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid>
+        <TabControl Margin="8" TabStripPlacement="Top">
+            <!-- Fitness Tab -->
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Fitness" VerticalAlignment="Center" />
+                </TabItem.Header>
+                
+                <Grid RowDefinitions="Auto,*">
+                    <!-- Statistics summary bar -->
+                    <Border Grid.Row="0" Margin="4,4,4,0" Padding="12,8"
+                            CornerRadius="6"
+                            Background="{DynamicResource PrimaryBackground}"
+                            BorderBrush="{DynamicResource BorderBrush}"
+                            BorderThickness="1">
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Algorithm:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding AlgorithmName}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Problem:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding ProblemName}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Status:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding JobStatus}" VerticalAlignment="Center" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Best Fitness:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding BestFitness, StringFormat={}{0:G8}}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Current Best:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding CurrentBestFitness, StringFormat={}{0:G8}}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Best Raw Fitness:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding BestRawFitness, StringFormat={}{0:G8}}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Current Best Raw:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding CurrentBestRawFitness, StringFormat={}{0:G8}}" VerticalAlignment="Center" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Iteration:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding TotalIterations}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Elapsed:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding ElapsedTime}" VerticalAlignment="Center" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Improvement:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding FitnessImprovement}" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,20,0">
+                                <TextBlock Text="Improvements:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding ImprovementRate}" VerticalAlignment="Center" />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Spacing="4" Margin="0,0,0,0">
+                                <TextBlock Text="Diversity:" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding CurrentDiversity, StringFormat={}{0:P1}, TargetNullValue=—}" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </WrapPanel>
+                    </Border>
+
+                    <Grid Grid.Row="1" RowDefinitions="3*,6,2*">
+                        <!-- Fitness chart -->
+                        <Border Grid.Row="0" Padding="4">
+                            <lvc:CartesianChart LegendPosition="Right"
+                                                VerticalAlignment="Stretch"
+                                                HorizontalAlignment="Stretch"
+                                                ZoomMode="X">
+                                <lvc:CartesianChart.XAxes>
+                                    <skiaSharpView:Axis Name="Iteration" TextSize="12" MinStep="1" ShowSeparatorLines="False" />
+                                </lvc:CartesianChart.XAxes>
+                                <lvc:CartesianChart.YAxes>
+                                    <skiaSharpView:Axis Name="Fitness" TextSize="12" />
+                                </lvc:CartesianChart.YAxes>
+
+                                <lvc:CartesianChart.Series>
+                                    <lvc:XamlLineSeries
+                                        SeriesName="Fitness"
+                                        Values="{Binding FitnessPerIterationValues}"
+                                        LineSmoothness="0"
+                                        GeometrySize="1"
+                                        DataLabelsSize="1"
+                                        MiniatureShapeSize="4"
+                                        ShowDataLabels="False" />
+                                    <lvc:XamlLineSeries
+                                        SeriesName="Raw Fitness"
+                                        Values="{Binding RawFitnessPerIterationValues}"
+                                        LineSmoothness="0"
+                                        GeometrySize="1"
+                                        DataLabelsSize="1"
+                                        MiniatureShapeSize="4"
+                                        ShowDataLabels="False" />
+                                    <lvc:XamlLineSeries
+                                        SeriesName="Population Fitness"
+                                        Values="{Binding PopulationFitnessPerIterationValues}"
+                                        LineSmoothness="0"
+                                        GeometrySize="1"
+                                        DataLabelsSize="1"
+                                        MiniatureShapeSize="4"
+                                        ShowDataLabels="False" />
+                                    <lvc:XamlLineSeries
+                                        SeriesName="Raw Population Fitness"
+                                        Values="{Binding PopulationRawFitnessPerIterationValues}"
+                                        LineSmoothness="0"
+                                        GeometrySize="1"
+                                        DataLabelsSize="1"
+                                        MiniatureShapeSize="4"
+                                        ShowDataLabels="False" />
+                                </lvc:CartesianChart.Series>
+                            </lvc:CartesianChart>
+                        </Border>
+
+                        <!-- GridSplitter -->
+                        <GridSplitter Grid.Row="1"
+                                      Classes="ChartSplitter"
+                                      Height="6"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Stretch"
+                                      ResizeDirection="Rows"
+                                      ResizeBehavior="PreviousAndNext" />
+
+                        <!-- Diversity chart -->
+                        <Border Grid.Row="2" Padding="4">
+                            <lvc:CartesianChart LegendPosition="Hidden"
+                                                VerticalAlignment="Stretch"
+                                                HorizontalAlignment="Stretch"
+                                                ZoomMode="X">
+                                <lvc:CartesianChart.XAxes>
+                                    <skiaSharpView:Axis Name="Iteration" TextSize="12"
+                                                        MinStep="1"
+                                                        ShowSeparatorLines="False" />
+                                </lvc:CartesianChart.XAxes>
+                                <lvc:CartesianChart.YAxes>
+                                    <skiaSharpView:Axis Name="Diversity"
+                                                        TextSize="12"
+                                                        MinLimit="0"
+                                                        MaxLimit="1" />
+                                </lvc:CartesianChart.YAxes>
+
+                                <lvc:CartesianChart.Series>
+                                    <lvc:XamlLineSeries
+                                        Values="{Binding DiversityPerIterationValues}"
+                                        LineSmoothness="0.3"
+                                        GeometrySize="1"
+                                        DataLabelsSize="1"
+                                        MiniatureShapeSize="4"
+                                        ShowDataLabels="False" />
+                                </lvc:CartesianChart.Series>
+                            </lvc:CartesianChart>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <!-- Best Solution of generation tab -->
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Best Solution of Generation" VerticalAlignment="Center" />
+                </TabItem.Header>
+
+                <ContentControl Content="{Binding CurrentProblemResults}" />
+            </TabItem>
+
+            <!-- Global best Solution tab -->
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Global Best Solution" VerticalAlignment="Center" />
+                </TabItem.Header>
+
+                <ContentControl Content="{Binding BestProblemResults}" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

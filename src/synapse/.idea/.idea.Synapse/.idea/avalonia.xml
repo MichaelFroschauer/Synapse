@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Synapse.GUI/App.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Animations.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/AppDefaultStyles.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Colors.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Controls.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Icons.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Theme.Dark.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Theme.Light.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Styles/Typography.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/BaseAlgorithmConfigView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/GAAlgorithmParametersView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/GaAlgorithmConfigView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/Nsga2AlgorithmConfigView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/PSOAlgorithmConfigView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/PsoAlgorithmConfigView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmConfig/RapGaAlgorithmConfigView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmExecutionControlView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmExecutionStateCard.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmExecutionStateCardView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmParameters.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmParameters/GAAlgorithmParametersView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmParameters/PSOAlgorithmParameters.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmParameters/PSOAlgorithmParametersView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmResults/FunctionResultView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmResults/JspResultView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmResults/QapResultView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmResults/TspResultView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmResults/TspResultsView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/AlgorithmSelectionView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/BottomBarView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Configurator.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/ConfiguratorView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/DynamicPropertyForm.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/ExecutionControl.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/GAAlgorithmParametersView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/HitlParameters.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/HitlParametersView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/InteractionTriggersView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Pages/AiAssistentPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Pages/AlgorithmConfiguratorView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Pages/ConfiguratorView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Pages/HitlConfiguratorPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Pages/ResultsPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/PropertyEditorPanel.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/RightPanel.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/RunningAlgorithmsView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/RunningJobsView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/Sidebar.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SidebarLeftView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SidebarRightView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionInput/PreferenceSolutionInputView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionInput/QapInputView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionInput/SolutionInputView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionInput/TspInputView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionInput/TspView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionPreferenceSelector.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionPreferenceSelectorView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Controls/SolutionViews/TSP.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/MainView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/MainWindow.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Pages/AiConfiguratorPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Pages/AlgorithmConfiguratorPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Pages/AlgorithmConfiguratorView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Pages/HitlConfiguratorPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Pages/HitlScriptingPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Pages/ResultsPageView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/PropertyTemplateSelector.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/RunningAlgorithmsView.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Templates/Card.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Templates/DynamicPropertyForm.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+        <entry key="Synapse.GUI/Views/Templates/PropertyEditorPanel.axaml" value="Synapse.GUI/Synapse.GUI.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

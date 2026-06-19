@@ -1,0 +1,74 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmResults"
+             xmlns:func="clr-namespace:Synapse.GUI.Models.Problems.Function"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmResults.FunctionResultView"
+             x:DataType="vm:FunctionResultViewModel">
+
+    <Grid RowDefinitions="Auto,3*,2*">
+
+        <!-- Summary header -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="16" Margin="8,6"
+                    VerticalAlignment="Top" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="Fitness:" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding Fitness, StringFormat={}{0:G8}}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="Dimensions:" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding DimensionCount}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="Iteration:" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding Iteration}" />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Bar chart for visual overview of dimension values -->
+        <Border Grid.Row="1" Margin="4" CornerRadius="4" Padding="4">
+            <lvc:CartesianChart
+                Series="{Binding ChartSeries}"
+                XAxes="{Binding ChartXAxes}"
+                YAxes="{Binding ChartYAxes}"
+                LegendPosition="Hidden"
+                ZoomMode="X"
+                MinHeight="200" />
+        </Border>
+
+        <!-- DataGrid for precise values -->
+        <Border Grid.Row="2" Margin="4" CornerRadius="4" Padding="4">
+            <DataGrid ItemsSource="{Binding Dimensions}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      CanUserReorderColumns="False"
+                      CanUserResizeColumns="True"
+                      CanUserSortColumns="True"
+                      GridLinesVisibility="Horizontal"
+                      HeadersVisibility="Column"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Auto"
+                      BorderThickness="1"
+                      BorderBrush="Gray">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="#"
+                                        Binding="{Binding Index}"
+                                        Width="60"
+                                        x:DataType="func:FunctionDimensionEntry" />
+                    <DataGridTextColumn Header="Dimension"
+                                        Binding="{Binding Label}"
+                                        Width="100"
+                                        x:DataType="func:FunctionDimensionEntry" />
+                    <DataGridTextColumn Header="Value"
+                                        Binding="{Binding FormattedValue}"
+                                        Width="*"
+                                        x:DataType="func:FunctionDimensionEntry" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Synapse.GUI.Views.Controls"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Pages"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Pages.AlgorithmConfiguratorPageView"
+             x:DataType="vm:AlgorithmConfiguratorPageViewModel">
+
+    <ScrollViewer>
+        <StackPanel Spacing="8">
+            
+            <controls:AlgorithmSelectionView DataContext="{Binding AlgorithmSelectionVm}" />
+            <controls:AlgorithmExecutionControlView DataContext="{Binding AlgorithmExecutionControlVm}" />
+            <ContentControl Content="{Binding CurrentAlgorithmParameters}" />
+            
+        </StackPanel>
+    </ScrollViewer>
+
+</UserControl>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" width="180" height="120" role="img" aria-labelledby="title desc">
+  <title id="title">Synapse Icon</title>
+  <desc id="desc">Stilisiertes 'S' aus zwei Knoten und geschwungener Verbindung mit farbigem Akzent.</desc>
+
+  <!-- transparenter Hintergrund -->
+  <rect width="100%" height="100%" fill="none"></rect>
+
+  <!-- Icon: zwei Knoten verbunden durch geschwungenes 'S' -->
+  <g transform="translate(0,0)" aria-hidden="false">
+    <!-- linke Node -->
+    <circle cx="40" cy="60" r="10" fill="#2B6DF6"></circle>
+    <!-- rechte Node -->
+    <circle cx="140" cy="60" r="10" fill="#2B6DF6"></circle>
+
+    <!-- S-förmige Verbindung -->
+    <path d="M48 55 C84 20, 116 100, 152 65" fill="none" stroke="#2B6DF6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.98"></path>
+
+    <!-- kleiner Akzent (menschlicher Eingriff) -->
+    <circle cx="106" cy="46" r="6.5" fill="#FF8A42"></circle>
+  </g>
+</svg>

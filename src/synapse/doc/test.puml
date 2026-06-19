@@ -1,0 +1,174 @@
+@startuml
+' Synapse architecture overview (excluding Synapse.Test)
+skinparam componentStyle rectangle
+skinparam shadowing false
+left to right direction
+
+title Synapse - Component Diagram (Overview)
+
+actor "User" as User
+
+package "Synapse.GUI" as GUI {
+  component "Avalonia UI\nViews + ViewModels" as GuiApp
+  component "DI Composition\nServiceCollectionExtension" as GuiDi
+}
+
+package "Synapse.JobManagement" as JM {
+  interface "IJobManager" as IJobManager
+  component "JobManager" as JobManager
+  component "MetaheuristicAlgorithmFactory" as AlgoFactory
+
+  IJobManager <|.. JobManager
+  JobManager --> AlgoFactory
+}
+
+package "Synapse.OptimizationCore\n(contracts + shared kernel)" as CORE {
+  interface "IMetaheuristic" as IMetaheuristic
+  interface "IAlgorithmConfig" as IAlgorithmConfig
+  interface "IProblem" as IProblem
+  interface "IProblemInstance" as IProblemInstance
+  interface "IFitnessEvaluator" as IFitnessEvaluator
+  interface "ISolution" as ISolution
+  interface "ISolutionSimilarity" as ISolutionSimilarity
+
+  interface "IAlgorithmController" as IAlgorithmController
+  component "AlgorithmController" as AlgorithmController
+
+  interface "IHitlController" as IHitlController
+  interface "IConstraint" as IConstraint
+  interface "IManualEditApplier" as IManualEditApplier
+  interface "IInteractionTrigger" as IInteractionTrigger
+
+  component "BaseAlgorithmConfig" as BaseAlgorithmConfig
+  component "BaseSolution" as BaseSolution
+
+  IAlgorithmController <|.. AlgorithmController
+  IAlgorithmConfig <|.. BaseAlgorithmConfig
+  ISolution <|.. BaseSolution
+}
+
+package "Algorithms\n(IMetaheuristic implementations)" as ALG {
+  component "GeneticAlgorithm" as GeneticAlgorithm
+  component "RAPGA" as RAPGA
+  component "ParticleSwarmAlgorithm" as ParticleSwarm
+  component "Nsga2Algorithm" as Nsga2
+
+  component "GeneticAlgorithmConfig" as GACfg
+  component "RAPGAConfig" as RAPGACfg
+  component "ParticleSwarmConfig" as PSOCfg
+  component "Nsga2AlgorithmConfig" as NSGACfg
+
+  IMetaheuristic <|.. GeneticAlgorithm
+  IMetaheuristic <|.. RAPGA
+  IMetaheuristic <|.. ParticleSwarm
+  IMetaheuristic <|.. Nsga2
+
+  IAlgorithmConfig <|.. GACfg
+  IAlgorithmConfig <|.. RAPGACfg
+  IAlgorithmConfig <|.. PSOCfg
+  IAlgorithmConfig <|.. NSGACfg
+}
+
+package "Problems\n(Synapse.Problems)" as PROB {
+  interface "IProblemParser" as IProblemParser
+
+  component "TspProblem + TspFitnessEvaluator\n+ TspSolution" as TspGroup
+  component "QapProblem + QapFitnessEvaluator\n+ QapSolution" as QapGroup
+  component "JspProblem + JspFitnessEvaluator\n+ JspSolution" as JspGroup
+  component "FunctionProblem + FunctionFitnessEvaluator\n+ FunctionSolution" as FunctionGroup
+
+  IProblem <|.. TspGroup
+  IProblem <|.. QapGroup
+  IProblem <|.. JspGroup
+  IProblem <|.. FunctionGroup
+}
+
+package "Synapse.HITL" as HITL {
+  component "HitlController" as HitlController
+
+  IHitlController <|.. HitlController
+  HitlController --> IConstraint
+  HitlController --> IManualEditApplier
+  HitlController --> IInteractionTrigger
+  HitlController --> ISolutionSimilarity
+}
+
+package "Synapse.HITL.Scripting" as SCRIPT {
+  interface "IScriptManager" as IScriptManager
+  interface "IScriptProvider" as IScriptProvider
+  interface "IApiClient" as IApiClient
+  interface "IChatPrompt" as IChatPrompt
+
+  component "ScriptManager" as ScriptManager
+  component "OpenRouterScriptProvider" as OpenRouterScriptProvider
+  component "OpenRouterClient" as OpenRouterClient
+  component "ChatPromptFactory" as ChatPromptFactory
+
+  IScriptManager <|.. ScriptManager
+  IScriptProvider <|.. OpenRouterScriptProvider
+  IApiClient <|.. OpenRouterClient
+
+  OpenRouterScriptProvider --> IApiClient
+  OpenRouterScriptProvider --> IChatPrompt
+  ChatPromptFactory --> IChatPrompt
+}
+
+package "Synapse.Reflection" as REFL {
+  interface "ITypeRegistry" as ITypeRegistry
+  interface "IDescriptorRegistry" as IDescriptorRegistry
+  component "ReflectionRegistry" as ReflectionRegistry
+  component "DescriptorRegistry" as DescriptorRegistry
+
+  ITypeRegistry <|.. ReflectionRegistry
+  IDescriptorRegistry <|.. DescriptorRegistry
+
+  ReflectionRegistry --> IMetaheuristic : discovers
+  ReflectionRegistry --> IProblem : discovers
+  ReflectionRegistry --> IConstraint : discovers
+  ReflectionRegistry --> IManualEditApplier : discovers
+}
+
+User --> GuiApp
+GuiApp --> IJobManager
+GuiApp --> IScriptProvider
+GuiApp --> IScriptManager
+GuiApp --> ITypeRegistry
+GuiApp --> IDescriptorRegistry
+GuiDi --> IAlgorithmController
+GuiDi --> IHitlController
+
+JobManager --> IMetaheuristic : executes
+JobManager --> IProblem
+JobManager --> IProblemInstance
+JobManager --> IAlgorithmController
+JobManager --> IHitlController
+AlgoFactory --> IMetaheuristic : creates by config type
+
+GeneticAlgorithm --> IProblem
+GeneticAlgorithm --> IFitnessEvaluator
+GeneticAlgorithm --> ISolution
+GeneticAlgorithm --> IAlgorithmConfig
+GeneticAlgorithm --> IHitlController
+
+RAPGA --> IProblem
+RAPGA --> IFitnessEvaluator
+RAPGA --> ISolution
+RAPGA --> IAlgorithmConfig
+RAPGA --> IHitlController
+
+ParticleSwarm --> IProblem
+ParticleSwarm --> IFitnessEvaluator
+ParticleSwarm --> ISolution
+ParticleSwarm --> IAlgorithmConfig
+ParticleSwarm --> IHitlController
+
+Nsga2 --> IProblem
+Nsga2 --> IFitnessEvaluator
+Nsga2 --> ISolution
+Nsga2 --> IAlgorithmConfig
+Nsga2 --> IHitlController
+Nsga2 --> ISolutionSimilarity
+
+HitlController --> IScriptManager
+
+@enduml

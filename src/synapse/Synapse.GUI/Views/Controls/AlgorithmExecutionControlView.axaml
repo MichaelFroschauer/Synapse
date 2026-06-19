@@ -1,0 +1,58 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmExecutionControlView"
+             xmlns:controls="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             x:DataType="controls:AlgorithmExecutionControlViewModel">
+    
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10 0 10 0">
+                
+                <Button Classes="theme-solid danger" Height="40" Margin="4"
+                        Command="{Binding CreateNewConfigCommand}">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="3">
+                        <Svg Path="/Assets/svg/plus.svg" Width="18" Height="18" />
+                        <TextBlock>Create New Job</TextBlock>
+                    </StackPanel>
+                </Button>
+                
+                <Button Classes="theme-solid warning" Height="40" Margin="4"
+                        Command="{Binding CloneCurrentJobCommand}">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="3">
+                        <Svg Path="/Assets/svg/clone.svg" Width="18" Height="18" />
+                        <TextBlock>Clone Current Job</TextBlock>
+                    </StackPanel>
+                </Button>
+                
+               
+                <Button Classes="theme-solid accent" Height="40" Margin="4"
+                        Command="{Binding QueueJobCommand}"
+                        IsEnabled="{Binding QueueingEnabled}">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="3">
+                        <Svg Path="/Assets/svg/list.svg" Width="18" Height="18" />
+                        <TextBlock>Queue Job</TextBlock>
+                    </StackPanel>
+                </Button>
+                
+                <Button Classes="theme-solid" Height="40" Margin="4"
+                        Command="{Binding ConfigureHitlActionsCommand}"
+                        IsEnabled="{Binding QueueingEnabled}">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="3">
+                        <Svg Path="/Assets/svg/user_gear.svg" Width="18" Height="18" />
+                        <TextBlock>Queue and configure HITL Actions</TextBlock>
+                    </StackPanel>
+                </Button>
+                    
+                <Button Classes="theme-solid success" Height="40" Margin="4"
+                        Command="{Binding StartAlgorithmExecutionCommand}"
+                        IsEnabled="{Binding StartingEnabled}">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Spacing="3">
+                        <Svg Path="/Assets/svg/start.svg" Width="18" Height="18" />
+                        <TextBlock>Start Job</TextBlock>
+                    </StackPanel>
+                </Button>
+
+            </WrapPanel>
+</UserControl>

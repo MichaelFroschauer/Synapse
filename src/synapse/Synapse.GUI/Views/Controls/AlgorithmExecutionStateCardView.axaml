@@ -1,0 +1,85 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmExecutionStateCardView"
+             xmlns:controls="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             x:DataType="controls:AlgorithmExecutionStateCardViewModel">
+
+    <templates:Card Title="{Binding Name}"
+                    Subtitle="{Binding SubTitle}"
+                    Background="{Binding CardBackground}"
+                    BorderBrush="{Binding CardBorderBrush}"
+                    SeparatorVisible="False">
+
+        <templates:Card.HeaderRight>
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="5">
+                <Ellipse Grid.Column="0" Classes="blinking green" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" Width="8" Height="8" />
+                <TextBlock Grid.Column="1" Text="{Binding Status}" />
+            </Grid>
+        </templates:Card.HeaderRight>
+
+        <StackPanel>
+            <!-- Trigger reason notification -->
+            <Border Background="{DynamicResource AlertWarningBackground}" CornerRadius="4" Padding="6" Margin="0,0,0,4"
+                    IsVisible="{Binding HasTriggerReason}">
+                <TextBlock Text="{Binding TriggerReason}" FontSize="11" Foreground="{DynamicResource AlertWarningForeground}"
+                           TextWrapping="Wrap" />
+            </Border>
+            
+            <ProgressBar Classes="success"
+                         Minimum="0"
+                         Maximum="{Binding MaxIterations}"
+                         Value="{Binding Iterations}" />
+
+            <Border HorizontalAlignment="Stretch"
+                    VerticalAlignment="Bottom"
+                    IsVisible="{Binding IsPointerOver, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                    IsHitTestVisible="{Binding IsPointerOver, RelativeSource={RelativeSource AncestorType=UserControl}}">
+
+                <StackPanel Spacing="5" Margin="0 5 0 0">
+                    <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                          ColumnSpacing="12" RowSpacing="6">
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="ID" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding IdString}" VerticalAlignment="Center"
+                                   TextWrapping="Wrap" />
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Algorithm" FontWeight="Bold" FontSize="12"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding AlgorithmType}" FontSize="12"
+                                   VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Problem" FontWeight="Bold" FontSize="12"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ProblemType}" FontSize="12" VerticalAlignment="Center"
+                                   TextTrimming="CharacterEllipsis" />
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Created" FontWeight="Bold" FontSize="12"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding CreatedAtTime}" FontSize="12"
+                                   VerticalAlignment="Center" />
+
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Started" FontWeight="Bold" FontSize="12"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding StartedAtTime}" FontSize="12"
+                                   VerticalAlignment="Center" />
+
+                        <TextBlock Grid.Row="5" Grid.Column="0" Text="Finished" FontWeight="Bold" FontSize="12"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding FinishedAtTime}" FontSize="12"
+                                   VerticalAlignment="Center" />
+                    </Grid>
+                    <Button VerticalAlignment="Center" Classes="theme-solid danger" Content="Delete"
+                            Command="{Binding DeleteJobCommand}"
+                            Margin="0,4,0,0" />
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+    </templates:Card>
+</UserControl>

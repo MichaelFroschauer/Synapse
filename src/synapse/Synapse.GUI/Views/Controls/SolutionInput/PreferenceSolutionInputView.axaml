@@ -1,0 +1,82 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:solutionInput="clr-namespace:Synapse.GUI.ViewModels.Controls.SolutionInput"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.SolutionInput.PreferenceSolutionInputView"
+             x:DataType="solutionInput:PreferenceSolutionInputViewModel">
+
+    <StackPanel Spacing="8" Margin="0 2 0 2">
+        <StackPanel Spacing="2">
+            <!-- <TextBlock Text="Reference Values" Classes="theme-form-control-label" /> -->
+            <TextBlock FontSize="12" Opacity="0.8" TextWrapping="Wrap">
+                <Run Text="Solution type: " />
+                <Run Text="{Binding ProblemSolutionType}" FontWeight="SemiBold" />
+            </TextBlock>
+            <TextBlock Text="Select positions for partial matching. Similarity mode uses the complete reference solution."
+                       Opacity="0.7"
+                       FontSize="12"
+                       TextWrapping="Wrap" />
+
+            <StackPanel Orientation="Horizontal" Spacing="8" Margin="0 6 0 0">
+                <Button Command="{Binding SelectAllEntriesCommand}"
+                        Classes="theme-outline"
+                        Padding="10,4">
+                    <TextBlock Text="Select all" />
+                </Button>
+                <Button Command="{Binding UnselectAllEntriesCommand}"
+                        Classes="theme-outline"
+                        Padding="10,4">
+                    <TextBlock Text="Unselect all" />
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <Border BorderBrush="{DynamicResource ThemeBorderMidBrush}" BorderThickness="1" CornerRadius="4" Padding="8">
+            <DataGrid ItemsSource="{Binding Entries}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="False"
+                      CanUserReorderColumns="False"
+                      CanUserResizeColumns="True"
+                      CanUserSortColumns="False"
+                      GridLinesVisibility="Horizontal"
+                      HeadersVisibility="Column"
+                      MaxHeight="280"
+                      RowHeight="34">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="Use"
+                                            Width="95"
+                                            Binding="{Binding IsActive, Mode=TwoWay}" />
+
+                    <DataGridTextColumn Header="Index"
+                                        Width="90"
+                                        IsReadOnly="True"
+                                        Binding="{Binding Index, StringFormat=Idx {0}}" />
+
+                    <DataGridTextColumn Header="Type"
+                                        Width="100"
+                                        IsReadOnly="True"
+                                        Binding="{Binding TypeLabel}" />
+
+                    <DataGridTemplateColumn Header="Value" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock VerticalAlignment="Center" Text="{Binding ValueText}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                        <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding ValueText, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                                         MinWidth="180"
+                                         Height="30"
+                                         VerticalAlignment="Center" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </StackPanel>
+</UserControl>
+

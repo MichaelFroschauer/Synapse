@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.BottomBarView"
+             x:DataType="controls:BottomBarViewModel">
+
+    <Grid ColumnDefinitions="Auto,Auto,Auto,Auto,*" Margin="8,0">
+        <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="4" Margin="0,0,16,0" VerticalAlignment="Center">
+            <TextBlock Text="Status:" FontWeight="SemiBold" FontSize="11" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding SelectedJobStatus}" FontSize="11" VerticalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="4" Margin="0,0,16,0" VerticalAlignment="Center">
+            <TextBlock Text="Best:" FontWeight="SemiBold" FontSize="11" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding BestFitnessText}" FontSize="11" VerticalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="4" Margin="0,0,16,0" VerticalAlignment="Center">
+            <TextBlock Text="Iter:" FontWeight="SemiBold" FontSize="11" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding IterationText}" FontSize="11" VerticalAlignment="Center" />
+        </StackPanel>
+        <Border Grid.Column="3" Width="1" Background="{DynamicResource BorderBrush}" Margin="0,3" />
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="12,0,0,0"
+                   Text="{Binding LastAlgorithmMessage}" FontSize="11" TextTrimming="CharacterEllipsis" />
+    </Grid>
+
+</UserControl>

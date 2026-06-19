@@ -1,0 +1,325 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:controls="clr-namespace:Synapse.GUI.Views.Controls"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Pages"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             xmlns:models="clr-namespace:Synapse.GUI.Models"
+             xmlns:utils="clr-namespace:Synapse.GUI.Utils"
+             x:Class="Synapse.GUI.Views.Pages.HitlConfiguratorPageView"
+             x:DataType="vm:HitlConfiguratorPageViewModel">
+
+    <UserControl.Resources>
+        <models:PropertyTemplateSelector x:Key="PropertyTemplateSelector"/>
+    </UserControl.Resources>
+
+    <ScrollViewer>
+        <StackPanel Spacing="8">
+
+            <ContentControl Content="{Binding CurrentAlgorithmParameters}" />
+
+
+            <Border>
+                <templates:Card Title="User Solution Choices"
+                                Subtitle="The user can set the iterations after which he can select solutions that will be used in the further optimization process.">
+                    <controls:SolutionPreferenceSelectorView DataContext="{Binding SolutionPreferenceVm}" />
+                </templates:Card>
+            </Border>
+
+            <Border>
+                <controls:InteractionTriggersView DataContext="{Binding InteractionTriggersVm}" />
+            </Border>
+
+            <Border>
+                <templates:Card Title="Constraints"
+                                Subtitle="Constraints restrict the solution space or guide the search process of the algorithm.">
+                    
+                    <StackPanel>
+                        <ItemsControl x:Name="AvailableConstraintsExpandersList"
+                                      utils:AccordionBehavior.IsAccordion="True"
+                                      ItemsSource="{Binding AvailableConstraints}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander Margin="4">
+                                        <Expander.Header>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding HeaderText}" TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </Expander.Header>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding BodyText}" TextWrapping="Wrap" Margin="8"/>
+                                            <controls:PropertyEditorPanel
+                                                Properties="{Binding ConstraintDefinition.UserSettableProperties}"
+                                                LayoutKind="Wrap"
+                                                Orientation="Horizontal"
+                                                ItemMargin="8"/>
+                                            <Button Margin="8"
+                                                    Classes="theme-solid success"
+                                                    Command="{Binding $parent[Border].((vm:HitlConfiguratorPageViewModel)DataContext).AddConstraintCommand}"
+                                                    CommandParameter="{Binding}"
+                                                    HorizontalAlignment="Left">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                            VerticalAlignment="Center" Spacing="3">
+                                                    <Svg Path="/Assets/svg/plus.svg" Width="18" Height="18" />
+                                                    <TextBlock>Add</TextBlock>
+                                                </StackPanel>
+                                            </Button>
+                                        </StackPanel>
+                                    </Expander>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        
+                        <Separator />
+                        
+                        <ItemsControl x:Name="ConstraintsExpandersList"
+                                      utils:AccordionBehavior.IsAccordion="True"
+                                      ItemsSource="{Binding Constraints}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander Margin="4">
+                                        <Expander.Header>
+                                            <Grid ColumnDefinitions="*,Auto">
+                                                <TextBlock Grid.Column="0"
+                                                           Text="{Binding HeaderText}" TextWrapping="Wrap" />
+                                                <Button Grid.Column="1"
+                                                        Margin="0 0 8 0"
+                                                        Classes="theme-solid danger"
+                                                        Command="{Binding $parent[Border].((vm:HitlConfiguratorPageViewModel)DataContext).DeleteConstraintCommand}"
+                                                        CommandParameter="{Binding}">
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                                VerticalAlignment="Center" Spacing="3">
+                                                        <Svg Path="/Assets/svg/trash.svg" Width="18" Height="18" />
+                                                        <TextBlock>Delete</TextBlock>
+                                                    </StackPanel>
+                                                </Button>
+                                            </Grid>
+                                        </Expander.Header>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding BodyText}" TextWrapping="Wrap" Margin="6" />
+                                        </StackPanel>
+                                    </Expander>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </templates:Card>
+            </Border>
+            
+            <Border>
+                <templates:Card Title="Solution Editors"
+                                Subtitle="Manual solution edits allow injecting full or partial solutions into the algorithm, with weighting controlling their influence.">
+                    <StackPanel>
+                        <ItemsControl x:Name="AvailableManualEditsExpandersList"
+                                      utils:AccordionBehavior.IsAccordion="True"
+                                      ItemsSource="{Binding AvailableManualEdits}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander Margin="4">
+                                        <Expander.Header>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding HeaderText}" TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </Expander.Header>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding BodyText}" TextWrapping="Wrap" Margin="8"/>
+
+                                            <StackPanel Margin="8">
+                                                <TextBlock Text="Solution Values" Classes="theme-form-control-label" />
+                                                <ContentControl Content="{Binding EditorDefinition.SolutionInputViewModel}" />
+                                            </StackPanel>
+
+                                            <WrapPanel Orientation="Horizontal">
+                                                <StackPanel Margin="8">
+                                                    <TextBlock Text="Probability (0-100)" Classes="theme-form-control-label" />
+                                                    <NumericUpDown Value="{Binding EditorDefinition.SolutionEditProbability, Mode=TwoWay}"
+                                                                   Minimum="0" Maximum="100" />
+                                                </StackPanel>
+
+                                                <StackPanel Margin="8">
+                                                    <TextBlock Text="Execute Number of Iterations" Classes="theme-form-control-label" />
+                                                    <NumericUpDown Value="{Binding EditorDefinition.SolutionEditExecuteForNrOfIterations, Mode=TwoWay}"
+                                                                   Minimum="0" />
+                                                </StackPanel>
+
+                                                <controls:PropertyEditorPanel
+                                                    Properties="{Binding EditorDefinition.UserSettableClass.UserSettableProperties}"
+                                                    LayoutKind="Wrap"
+                                                    Orientation="Horizontal"
+                                                    ItemMargin="8"/>
+                                            </WrapPanel>
+
+                                            <Button Margin="8"
+                                                    Classes="theme-solid success"
+                                                    Command="{Binding $parent[Border].((vm:HitlConfiguratorPageViewModel)DataContext).AddManualEditCommand}"
+                                                    CommandParameter="{Binding}"
+                                                    HorizontalAlignment="Left">
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                            VerticalAlignment="Center" Spacing="3">
+                                                    <Svg Path="/Assets/svg/plus.svg" Width="18" Height="18" />
+                                                    <TextBlock>Add</TextBlock>
+                                                </StackPanel>
+                                            </Button>
+                                        </StackPanel>
+                                    </Expander>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        
+                        <Separator />
+                        
+                        <ItemsControl x:Name="ManualEditExpandersList"
+                                      utils:AccordionBehavior.IsAccordion="True"
+                                      ItemsSource="{Binding ManualEdits}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander Margin="4">
+                                        <Expander.Header>
+                                            <Grid ColumnDefinitions="*,Auto">
+                                                <TextBlock Grid.Column="0" Text="{Binding HeaderText}" TextWrapping="Wrap" />
+                                                <Button Grid.Column="1"
+                                                        Margin="0 0 8 0"
+                                                        Classes="theme-solid danger"
+                                                        Command="{Binding $parent[Border].((vm:HitlConfiguratorPageViewModel)DataContext).DeleteManualEditCommand}"
+                                                        CommandParameter="{Binding}">
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                                VerticalAlignment="Center" Spacing="3">
+                                                        <Svg Path="/Assets/svg/trash.svg" Width="18" Height="18" />
+                                                        <TextBlock>Delete</TextBlock>
+                                                    </StackPanel>
+                                                </Button>
+                                            </Grid>
+                                        </Expander.Header>
+                                        <StackPanel Spacing="4" Margin="6">
+                                            <TextBlock Text="{Binding BodyText}" TextWrapping="Wrap" />
+                                        </StackPanel>
+                                    </Expander>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </templates:Card>
+            </Border>
+
+            <Border>
+                <templates:Card Title="Solution Preferences"
+                                Subtitle="Solution preferences predefine parts of a solution that receive higher fitness through weighting, giving them priority in the search.">
+                    <StackPanel Spacing="10">
+                        <Grid ColumnDefinitions="2*,2*,3*" ColumnSpacing="12" RowDefinitions="Auto">
+                            <StackPanel Grid.Column="0" Spacing="4">
+                                <TextBlock Text="Mode" Classes="theme-form-control-label" />
+                                <ComboBox MinWidth="220"
+                                          ItemsSource="{Binding PreferenceModes}"
+                                          SelectedItem="{Binding SelectedPreferenceMode, Mode=TwoWay}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1" Spacing="4">
+                                <TextBlock Text="Name (optional)" Classes="theme-form-control-label" />
+                                <TextBox MinWidth="220" Text="{Binding NewPreferenceName, Mode=TwoWay}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="2" Spacing="4">
+                                <TextBlock Text="Solution Similarity Preference Weight" Classes="theme-form-control-label" />
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10" VerticalAlignment="Center">
+                                    <Slider Grid.Column="0"
+                                            Minimum="-2"
+                                            Maximum="2"
+                                            TickFrequency="0.05"
+                                            Value="{Binding NewPreferenceWeight, Mode=TwoWay}" />
+                                    <NumericUpDown Grid.Column="1"
+                                                   Width="110"
+                                                   Value="{Binding NewPreferenceWeight, Mode=TwoWay}"
+                                                   Minimum="-2"
+                                                   Maximum="2"
+                                                   Increment="0.05" />
+                                </Grid>
+                                <TextBlock Text="Typical: 0.2-1.2 (Factor = Similarity * Weight)" Opacity="0.72" FontSize="12" />
+                            </StackPanel>
+                        </Grid>
+
+                        <StackPanel Spacing="4" Margin="0 0 0 0">
+                            <TextBlock Text="Similarity evaluator (for similarity mode)" Classes="theme-form-control-label" />
+                            <ComboBox ItemsSource="{Binding SolutionPreferenceVm.AvailableSolutionSimilarities}"
+                                      SelectedItem="{Binding SolutionPreferenceVm.SelectedSolutionSimilarity, Mode=TwoWay}"
+                                      Height="31"
+                                      MaxDropDownHeight="300">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold"/>
+                                            <TextBlock Text="{Binding Description}" Opacity="0.75" FontSize="12" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+
+                                <ComboBox.SelectionBoxItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding DisplayName}" />
+                                    </DataTemplate>
+                                </ComboBox.SelectionBoxItemTemplate>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Spacing="4" Margin="0 2 0 0">
+                            <!-- <TextBlock Text="Reference / partial solution input" Classes="theme-form-control-label" /> -->
+                            <ContentControl Content="{Binding PreferenceInputViewModel}" />
+                        </StackPanel>
+
+                        <StackPanel Spacing="4" Margin="0 2 0 0">
+                            <Button Classes="theme-solid success"
+                                    HorizontalAlignment="Left"
+                                    Command="{Binding AddPreferenceCommand}">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                            VerticalAlignment="Center" Spacing="3">
+                                    <Svg Path="/Assets/svg/plus.svg" Width="18" Height="18" />
+                                    <TextBlock>Add Preference</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <TextBlock Text="{Binding PreferenceInputError}"
+                                       Foreground="IndianRed"
+                                       TextWrapping="Wrap" />
+                        </StackPanel>
+
+                        <Separator />
+
+                        <ItemsControl x:Name="PreferencesExpandersList"
+                                      utils:AccordionBehavior.IsAccordion="True"
+                                      ItemsSource="{Binding Preferences}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Expander Margin="4">
+                                        <Expander.Header>
+                                            <Grid ColumnDefinitions="*,Auto">
+                                                <TextBlock Grid.Column="0" Text="{Binding HeaderText}" TextWrapping="Wrap" />
+                                                <Button Grid.Column="1"
+                                                        Margin="0 0 8 0"
+                                                        Classes="theme-solid danger"
+                                                        Command="{Binding $parent[Border].((vm:HitlConfiguratorPageViewModel)DataContext).DeletePreferenceCommand}"
+                                                        CommandParameter="{Binding}">
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                                                VerticalAlignment="Center" Spacing="3">
+                                                        <Svg Path="/Assets/svg/trash.svg" Width="18" Height="18" />
+                                                        <TextBlock>Delete</TextBlock>
+                                                    </StackPanel>
+                                                </Button>
+                                            </Grid>
+                                        </Expander.Header>
+                                        <StackPanel Spacing="4" Margin="6">
+                                            <TextBlock Text="{Binding BodyText}" TextWrapping="Wrap" />
+                                        </StackPanel>
+                                    </Expander>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </templates:Card>
+            </Border>
+
+            <!-- <controls:HitlParametersView /> -->
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
+

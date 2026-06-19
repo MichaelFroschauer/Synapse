@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+             xmlns:vm="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmResults"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmResults.JspResultView"
+             x:DataType="vm:JspResultViewModel">
+    
+    <Grid RowDefinitions="Auto,*">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="6">
+            <StackPanel Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="Fitness:" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding Fitness}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="4">
+                <TextBlock Text="Iteration:" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding Iteration}" />
+            </StackPanel>
+        </StackPanel>
+        <lvc:CartesianChart
+            Grid.Row="1"
+            VisualElements="{Binding Visuals}"
+            ZoomMode="X"
+            Margin="8"
+            XAxes="{Binding XAxes}"
+            YAxes="{Binding YAxes}"
+            MinHeight="{Binding MinChartHeight}">
+        </lvc:CartesianChart>
+    </Grid>
+    
+</UserControl>

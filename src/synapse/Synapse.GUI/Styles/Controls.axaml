@@ -1,0 +1,27 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!-- Text Styles (class-based) -->
+  <Style Selector="TextBlock.theme-text-body">
+    <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+    <Setter Property="FontSize" Value="{DynamicResource FontSizeNormal}"/>
+  </Style>
+
+  <Style Selector="TextBlock.size-lg">
+    <Setter Property="FontSize" Value="{DynamicResource FontSizeXL}"/>
+  </Style>
+
+  <Style Selector="TextBlock.theme-form-control-label">
+    <Setter Property="FontSize" Value="{DynamicResource FontSizeSmall}"/>
+    <Setter Property="Foreground" Value="{DynamicResource SecondaryForegroundBrush}"/>
+    <Setter Property="Margin" Value="0,0,0,4"/>
+  </Style>
+
+  <!-- Separator default look -->
+  <Style Selector="Separator">
+    <Setter Property="Margin" Value="8,12"/>
+    <Setter Property="Background" Value="{DynamicResource BorderBrush}"/>
+    <Setter Property="Height" Value="1"/>
+  </Style>
+
+</Styles>

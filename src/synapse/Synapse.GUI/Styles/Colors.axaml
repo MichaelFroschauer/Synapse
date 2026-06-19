@@ -1,0 +1,37 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- ── Semantic colours (theme-level colours are in Theme.Light/Dark.axaml) ── -->
+    
+    <!-- HITL section colours -->
+    <SolidColorBrush x:Key="HitlCustomParamItemBackground">#e9e9ed</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlCustomParamItemBorder">#f9fafb</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlSolutionPreferenceItemBackground">#f0fdf4</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlSolutionPreferenceItemBorder">#bbf7d0</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlManualSolutionEditBackground">#fefce8</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlManualSolutionEditBorder">#fef08a</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlConstraintBackground">#fef2f2</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlConstraintBorder">#fecaca</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlAiAssistBackground">#f2f6ff</SolidColorBrush>
+    <SolidColorBrush x:Key="HitlAiAssistBorder">#e9d5ff</SolidColorBrush>
+    <SolidColorBrush x:Key="ExecutionControlBackground">#ffffff</SolidColorBrush>
+    
+    <!-- Badge colours -->
+    <SolidColorBrush x:Key="BadgeSuccessBackground">#DCFCE7</SolidColorBrush>
+    <SolidColorBrush x:Key="BadgeSuccessForeground">#166534</SolidColorBrush>
+    
+    <!-- Subtle card surfaces (used in trigger cards, etc.) -->
+    <SolidColorBrush x:Key="SubtleCardBackground">#F8FAFC</SolidColorBrush>
+    <SolidColorBrush x:Key="SubtleCardBorder">#E2E8F0</SolidColorBrush>
+    
+    <!-- Alert / warning banner colours -->
+    <SolidColorBrush x:Key="AlertWarningBackground">#FEF3C7</SolidColorBrush>
+    <SolidColorBrush x:Key="AlertWarningBorder">#F59E0B</SolidColorBrush>
+    <SolidColorBrush x:Key="AlertWarningForeground">#92400E</SolidColorBrush>
+    <SolidColorBrush x:Key="AlertWarningForegroundStrong">#78350F</SolidColorBrush>
+    
+    <!-- Corner radii -->
+    <CornerRadius x:Key="CornerRadiusSmall">6</CornerRadius>
+    <CornerRadius x:Key="CornerRadiusMedium">12</CornerRadius>
+    
+</ResourceDictionary>

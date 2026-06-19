@@ -1,0 +1,12 @@
+<UserControl
+    x:Class="Synapse.GUI.Views.Controls.PropertyEditorPanel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:models="clr-namespace:Synapse.GUI.Models">
+    <UserControl.Resources>
+        <!-- Fallback if no external ItemTemplate is set -->
+        <models:PropertyTemplateSelector x:Key="DefaultPropertyTemplateSelector" />
+    </UserControl.Resources>
+
+    <Grid x:Name="Root"/>
+</UserControl>

@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <Title>Synapse</Title>
+        <Authors>Michael Froschauer</Authors>
+        <Copyright>Michael Froschauer</Copyright>
+        <UserSecretsId>e76ac60d-49bb-4a7c-bd39-7d00aa09afae</UserSecretsId>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DefineConstants>TRACE</DefineConstants>
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**"/>
+        <AvaloniaResource Include="Styles\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ActiproSoftware.Controls.Avalonia" Version="25.2.3" />
+        <PackageReference Include="Avalonia" Version="11.3.12" />
+        <PackageReference Include="Avalonia.AvaloniaEdit" Version="11.4.1" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.3.12" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.3.12" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.12" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.12" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Include="Avalonia.Diagnostics" Version="11.3.12">
+            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="AvaloniaEdit.TextMate" Version="11.4.1" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.1" />
+        <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-rc6.1" />
+        <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+        <PackageReference Include="Svg.Controls.Skia.Avalonia" Version="11.3.9.5" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.5" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.5" />
+        <PackageReference Include="TextMateSharp.Grammars" Version="2.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\Templates\Card.axaml.cs">
+        <DependentUpon>Card.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Controls\AlgorithmParameters\GAAlgorithmParametersView.axaml.cs">
+        <DependentUpon>GAAlgorithmParametersView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Controls\RunningJobsView.axaml.cs">
+        <DependentUpon>RunningAlgorithmsView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Controls\Pages\AlgorithmConfiguratorView.axaml.cs">
+        <DependentUpon>ConfiguratorView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Controls\PropertyEditorPanel.axaml.cs">
+        <DependentUpon>PropertyEditorPanel.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Synapse.Algorithms.GeneticAlgorithm\Synapse.Algorithms.GeneticAlgorithm.csproj" />
+      <ProjectReference Include="..\Synapse.Algorithms.NSGA-II\Synapse.Algorithms.NSGA-II.csproj" />
+      <ProjectReference Include="..\Synapse.Algorithms.ParticleSwarm\Synapse.Algorithms.ParticleSwarm.csproj" />
+      <ProjectReference Include="..\Synapse.Algorithms.RAPGA\Synapse.Algorithms.RAPGA.csproj" />
+      <ProjectReference Include="..\Synapse.HITL\Synapse.HITL.csproj" />
+      <ProjectReference Include="..\Synapse.JobManagement\Synapse.JobManagement.csproj" />
+      <ProjectReference Include="..\Synapse.OptimizationCore\Synapse.OptimizationCore.csproj" />
+      <ProjectReference Include="..\Synapse.Reflection\Synapse.Reflection.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+        <HintPath>..\..\..\..\..\..\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.8\lib\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Pages\AiConfiguratorPageView.axaml" />
+      <AdditionalFiles Include="Views\Pages\HitlConfiguratorPageView.axaml" />
+      <AdditionalFiles Include="Views\Pages\ResultsPageView.axaml" />
+    </ItemGroup>
+</Project>

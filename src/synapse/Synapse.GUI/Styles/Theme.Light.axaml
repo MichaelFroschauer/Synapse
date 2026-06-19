@@ -1,0 +1,17 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="PrimaryBackground">#F9FAFB</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowBackground">#FFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="CardBackground">#FFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="CardBorder">#E2E8F0</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryBrush">#31AE5F</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentBrush">#9FDCB5</SolidColorBrush>
+    <SolidColorBrush x:Key="ForegroundBrush">#111827</SolidColorBrush>
+    <SolidColorBrush x:Key="SecondaryForegroundBrush">#6B7280</SolidColorBrush>
+    <SolidColorBrush x:Key="BorderBrush">#A9A9A9</SolidColorBrush>
+    <SolidColorBrush x:Key="DisabledBrush">#9CA3AF</SolidColorBrush>
+
+    <!-- Elevation / shadows (reserved for future use) -->
+
+</ResourceDictionary>

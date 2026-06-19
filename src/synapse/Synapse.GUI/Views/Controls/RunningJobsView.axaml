@@ -1,0 +1,49 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Synapse.GUI.Views.Controls"
+             xmlns:vm1="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Synapse.GUI.Views.Controls.RunningJobsView"
+             x:DataType="vm1:RunningJobsViewModel">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Spacing="10" Margin="20">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="5">
+                <TextBlock Grid.Column="0" Classes="theme-text-body size-lg" FontWeight="Bold"
+                           Text="Running Jobs" />
+                <Border Grid.Column="1"
+                        Background="{StaticResource BadgeSuccessBackground}"
+                        CornerRadius="10"
+                        Padding="6,2"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center">
+                    <TextBlock Text="{Binding ActiveBadge}" Foreground="{StaticResource BadgeSuccessForeground}"
+                               FontWeight="SemiBold" FontSize="14" />
+                </Border>
+            </Grid>
+        </StackPanel>
+        
+        <ListBox Grid.Row="1"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 BorderThickness="0"
+                 ItemsSource="{Binding Jobs}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                 SelectedItem="{Binding SelectedJob, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <controls:AlgorithmExecutionStateCardView />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+    
+</UserControl>

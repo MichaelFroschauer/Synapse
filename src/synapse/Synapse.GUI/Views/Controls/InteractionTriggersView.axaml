@@ -1,0 +1,152 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             mc:Ignorable="d" d:DesignWidth="700"
+             x:Class="Synapse.GUI.Views.Controls.InteractionTriggersView"
+             xmlns:controls="clr-namespace:Synapse.GUI.ViewModels.Controls"
+             x:DataType="controls:InteractionTriggersViewModel">
+
+    <templates:Card Title="Interaction Triggers"
+                    Subtitle="Configure when the algorithm should automatically pause to ask for your input. Multiple triggers can be combined (any trigger fires → pause).">
+
+        <StackPanel Spacing="12" Margin="8">
+
+            <!-- Trigger Fired Notification -->
+            <Border Background="{DynamicResource AlertWarningBackground}" BorderBrush="{DynamicResource AlertWarningBorder}" BorderThickness="1"
+                    CornerRadius="8" Padding="12"
+                    IsVisible="{Binding HasTriggered}">
+                <StackPanel Spacing="4">
+                    <TextBlock FontWeight="Bold" Foreground="{DynamicResource AlertWarningForeground}">⚡ Interaction Requested</TextBlock>
+                    <TextBlock Text="{Binding LastTriggerReason}" TextWrapping="Wrap" Foreground="{DynamicResource AlertWarningForegroundStrong}" FontSize="12" />
+                </StackPanel>
+            </Border>
+
+            <!-- ═══ Periodic Trigger ═══ -->
+            <Border Background="{DynamicResource SubtleCardBackground}" BorderBrush="{DynamicResource SubtleCardBorder}" BorderThickness="1"
+                    CornerRadius="8" Padding="12">
+                <StackPanel Spacing="8">
+                    <CheckBox IsChecked="{Binding PeriodicEnabled}">
+                        <StackPanel>
+                            <TextBlock FontWeight="SemiBold">Periodic (every N iterations)</TextBlock>
+                            <TextBlock FontSize="11" Foreground="Gray" TextWrapping="Wrap">
+                                Pause at fixed intervals regardless of search state. Good for regular check-ins.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox>
+                    <StackPanel Orientation="Horizontal" Spacing="12" Margin="28,0,0,0"
+                                IsEnabled="{Binding PeriodicEnabled}">
+                        <StackPanel>
+                            <TextBlock Classes="theme-form-control-label" Text="Interval (iterations)" />
+                            <NumericUpDown Value="{Binding PeriodicInterval}" Minimum="1" Maximum="100000"
+                                           Increment="10" Width="150" />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- ═══ Stagnation Trigger ═══ -->
+            <Border Background="{DynamicResource SubtleCardBackground}" BorderBrush="{DynamicResource SubtleCardBorder}" BorderThickness="1"
+                    CornerRadius="8" Padding="12">
+                <StackPanel Spacing="8">
+                    <CheckBox IsChecked="{Binding StagnationEnabled}">
+                        <StackPanel>
+                            <TextBlock FontWeight="SemiBold">Stagnation Detection</TextBlock>
+                            <TextBlock FontSize="11" Foreground="Gray" TextWrapping="Wrap">
+                                Pause when the fitness has not improved significantly over a window of iterations.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox>
+                    <WrapPanel Margin="28,0,0,0" IsEnabled="{Binding StagnationEnabled}">
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Window (iterations)" />
+                            <NumericUpDown Value="{Binding StagnationWindow}" Minimum="2" Maximum="10000"
+                                           Increment="5" Width="150" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Min. improvement (%)" />
+                            <NumericUpDown Value="{Binding StagnationMinImprovement}" Minimum="0" Maximum="100"
+                                           Increment="0.1" FormatString="F2" Width="150" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Cooldown (iterations)" />
+                            <NumericUpDown Value="{Binding StagnationCooldown}" Minimum="0" Maximum="10000"
+                                           Increment="5" Width="150" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- ═══ Diversity Loss Trigger ═══ -->
+            <Border Background="{DynamicResource SubtleCardBackground}" BorderBrush="{DynamicResource SubtleCardBorder}" BorderThickness="1"
+                    CornerRadius="8" Padding="12">
+                <StackPanel Spacing="8">
+                    <CheckBox IsChecked="{Binding DiversityLossEnabled}">
+                        <StackPanel>
+                            <TextBlock FontWeight="SemiBold">Diversity Loss</TextBlock>
+                            <TextBlock FontSize="11" Foreground="Gray" TextWrapping="Wrap">
+                                Pause when the population diversity drops below a threshold for several consecutive iterations. Useful to prevent premature convergence.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox>
+                    <WrapPanel Margin="28,0,0,0" IsEnabled="{Binding DiversityLossEnabled}">
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Diversity threshold (0–1)" />
+                            <NumericUpDown Value="{Binding DiversityThreshold}" Minimum="0" Maximum="1"
+                                           Increment="0.05" FormatString="F2" Width="150" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Consecutive iterations" />
+                            <NumericUpDown Value="{Binding DiversityConsecutiveIterations}" Minimum="1" Maximum="1000"
+                                           Increment="1" Width="150" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Cooldown (iterations)" />
+                            <NumericUpDown Value="{Binding DiversityCooldown}" Minimum="0" Maximum="10000"
+                                           Increment="5" Width="150" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- ═══ Quality Threshold Trigger ═══ -->
+            <Border Background="{DynamicResource SubtleCardBackground}" BorderBrush="{DynamicResource SubtleCardBorder}" BorderThickness="1"
+                    CornerRadius="8" Padding="12">
+                <StackPanel Spacing="8">
+                    <CheckBox IsChecked="{Binding QualityThresholdEnabled}">
+                        <StackPanel>
+                            <TextBlock FontWeight="SemiBold">Quality Threshold</TextBlock>
+                            <TextBlock FontSize="11" Foreground="Gray" TextWrapping="Wrap">
+                                Pause when the best fitness reaches a target value. Allows refining a "good enough" solution.
+                            </TextBlock>
+                        </StackPanel>
+                    </CheckBox>
+                    <WrapPanel Margin="28,0,0,0" IsEnabled="{Binding QualityThresholdEnabled}">
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text="Target fitness" />
+                            <NumericUpDown Value="{Binding QualityTargetFitness}"
+                                           Increment="10" FormatString="F2" Width="150" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text=" " />
+                            <CheckBox IsChecked="{Binding QualityMinimize}" Margin="0,4,0,0">Minimize</CheckBox>
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Classes="theme-form-control-label" Text=" " />
+                            <CheckBox IsChecked="{Binding QualityFireOnce}" Margin="0,4,0,0">Fire only once</CheckBox>
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Info text -->
+            <TextBlock FontSize="11" Foreground="Gray" TextWrapping="Wrap" Margin="4,4,4,0">
+                When no trigger is enabled, the algorithm only pauses when you manually request it (Manual Only mode).
+                Triggers are evaluated after each iteration. The algorithm pauses and waits for your input when any active trigger fires.
+            </TextBlock>
+
+        </StackPanel>
+    </templates:Card>
+</UserControl>
+

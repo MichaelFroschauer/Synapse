@@ -1,0 +1,150 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:Synapse.GUI.Views.Templates"
+             xmlns:algorithmConfig="clr-namespace:Synapse.GUI.ViewModels.Controls.AlgorithmConfig"
+             xmlns:algorithmConfig1="clr-namespace:Synapse.GUI.Views.Controls.AlgorithmConfig"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="algorithmConfig:PsoAlgorithmConfigViewModel"
+             x:Class="Synapse.GUI.Views.Controls.AlgorithmConfig.PsoAlgorithmConfigView">
+    
+    <templates:Card Title="PSO Algorithm Parameters"
+                  Subtitle="Configure the core parameters for your selected algorithm">
+    <StackPanel Spacing="8" Margin="0 8 0 0">
+      <Grid ColumnDefinitions="*,*,*" ColumnSpacing="30">
+        
+        <!-- Basic Parameter -->
+        <StackPanel Grid.Column="0" Spacing="10">
+          <algorithmConfig1:BaseAlgorithmConfigView/>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Swarm Size" />
+            <NumericUpDown Value="{Binding SwarmSize, Mode=TwoWay}"
+                           Minimum="1" Maximum="100000"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding EnableBaseParameter}" />
+          </StackPanel>
+        </StackPanel>
+
+        <!-- Cognitive & Social Factors -->
+        <StackPanel Grid.Column="1" Spacing="10">
+          <TextBlock FontWeight="SemiBold" Text="Cognitive &amp; Social Factors"/>
+          
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Inertia" />
+            <Slider Minimum="0" Maximum="5"
+                    Value="{Binding Inertia, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <NumericUpDown Value="{Binding Inertia, Mode=TwoWay}"
+                           Minimum="0" Maximum="5"
+                           Increment="0.01"
+                           FormatString="F2"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+          
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Cognitive" />
+            <Slider Minimum="0" Maximum="5"
+                    Value="{Binding Cognitive, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <NumericUpDown Value="{Binding Cognitive, Mode=TwoWay}"
+                           Minimum="0" Maximum="5"
+                           Increment="0.01"
+                           FormatString="F2"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="Social" />
+            <Slider Minimum="0" Maximum="5"
+                    Value="{Binding Social, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <NumericUpDown Value="{Binding Social, Mode=TwoWay}"
+                           Minimum="0" Maximum="5"
+                           Increment="0.01"
+                           FormatString="F2"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock Classes="theme-form-control-label" Text="VelocityClampFactor" />
+            <Slider Minimum="0" Maximum="20"
+                    Value="{Binding VelocityClampFactor, Mode=TwoWay}"
+                    IsEnabled="{Binding !JobActive}" />
+            <NumericUpDown Value="{Binding VelocityClampFactor, Mode=TwoWay}"
+                           Minimum="0" Maximum="20"
+                           Increment="0.01"
+                           FormatString="F2"
+                           Classes="theme-outline"
+                           IsEnabled="{Binding !JobActive}" />
+          </StackPanel>
+          
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Spacing="10">
+          <TextBlock FontWeight="SemiBold" Text="Position Bounds (per dimension)"/>
+          <TextBlock FontSize="12" TextWrapping="Wrap" Text="{Binding BoundsHint}" />
+          <DataGrid ItemsSource="{Binding PositionBounds}"
+                    AutoGenerateColumns="False"
+                    IsReadOnly="False"
+                    CanUserReorderColumns="False"
+                    CanUserResizeColumns="True"
+                    CanUserSortColumns="False"
+                    GridLinesVisibility="Horizontal"
+                    HeadersVisibility="Column"
+                    MaxHeight="320"
+                    MinHeight="160"
+                    RowHeight="34"
+                    IsEnabled="{Binding !JobActive}">
+            <DataGrid.Columns>
+              <DataGridTextColumn Header="Dimension"
+                                  Width="130"
+                                  IsReadOnly="True"
+                                  Binding="{Binding Label}" />
+
+              <DataGridTemplateColumn Header="Min" Width="*">
+                <DataGridTemplateColumn.CellTemplate>
+                  <DataTemplate>
+                    <TextBlock VerticalAlignment="Center" Text="{Binding Min, StringFormat='{}{0:F2}'}" />
+                  </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+                <DataGridTemplateColumn.CellEditingTemplate>
+                  <DataTemplate>
+                    <NumericUpDown Value="{Binding Min, Mode=TwoWay}"
+                                   Increment="0.01"
+                                   FormatString="F2"
+                                   Minimum="-1000000"
+                                   Maximum="1000000" />
+                  </DataTemplate>
+                </DataGridTemplateColumn.CellEditingTemplate>
+              </DataGridTemplateColumn>
+
+              <DataGridTemplateColumn Header="Max" Width="*">
+                <DataGridTemplateColumn.CellTemplate>
+                  <DataTemplate>
+                    <TextBlock VerticalAlignment="Center" Text="{Binding Max, StringFormat='{}{0:F2}'}" />
+                  </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+                <DataGridTemplateColumn.CellEditingTemplate>
+                  <DataTemplate>
+                    <NumericUpDown Value="{Binding Max, Mode=TwoWay}"
+                                   Increment="0.01"
+                                   FormatString="F2"
+                                   Minimum="-1000000"
+                                   Maximum="1000000" />
+                  </DataTemplate>
+                </DataGridTemplateColumn.CellEditingTemplate>
+              </DataGridTemplateColumn>
+            </DataGrid.Columns>
+          </DataGrid>
+        </StackPanel>
+      </Grid>
+
+    </StackPanel>
+  </templates:Card>
+  
+</UserControl>
