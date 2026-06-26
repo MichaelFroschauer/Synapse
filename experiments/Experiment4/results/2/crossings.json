@@ -1,0 +1,10044 @@
+{
+  "Id": "ce03f814-abab-499e-9df9-047e58f283c5",
+  "Status": 2,
+  "BestFitness": 32665,
+  "BestSolution": {
+    "Fitness": 32665,
+    "Length": 52
+  },
+  "CurrentSolution": {
+    "Fitness": 32309,
+    "Length": 52
+  },
+  "CreatedAt": "2026-04-08T11:47:56.927911+00:00",
+  "StartedAt": "2026-04-08T11:48:12.1040528+00:00",
+  "FinishedAt": null,
+  "LastMessage": "crossings Gen 500, WeightedScore=0.2690, Distance=32665.0000, Crossing=850",
+  "IterationCount": 500,
+  "FitnessPerIteration": [
+    {
+      "Iteration": 1,
+      "Fitness": 23581
+    },
+    {
+      "Iteration": 2,
+      "Fitness": 23581
+    },
+    {
+      "Iteration": 3,
+      "Fitness": 23430
+    },
+    {
+      "Iteration": 4,
+      "Fitness": 22917
+    },
+    {
+      "Iteration": 5,
+      "Fitness": 21229
+    },
+    {
+      "Iteration": 6,
+      "Fitness": 21229
+    },
+    {
+      "Iteration": 7,
+      "Fitness": 20915
+    },
+    {
+      "Iteration": 8,
+      "Fitness": 20915
+    },
+    {
+      "Iteration": 9,
+      "Fitness": 20518
+    },
+    {
+      "Iteration": 10,
+      "Fitness": 20518
+    },
+    {
+      "Iteration": 11,
+      "Fitness": 20518
+    },
+    {
+      "Iteration": 12,
+      "Fitness": 20227
+    },
+    {
+      "Iteration": 13,
+      "Fitness": 19700
+    },
+    {
+      "Iteration": 14,
+      "Fitness": 19380
+    },
+    {
+      "Iteration": 15,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 16,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 17,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 18,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 19,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 20,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 21,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 22,
+      "Fitness": 18259
+    },
+    {
+      "Iteration": 23,
+      "Fitness": 18259
+    },
+    {
+      "Iteration": 24,
+      "Fitness": 18023
+    },
+    {
+      "Iteration": 25,
+      "Fitness": 17635
+    },
+    {
+      "Iteration": 26,
+      "Fitness": 17635
+    },
+    {
+      "Iteration": 27,
+      "Fitness": 17635
+    },
+    {
+      "Iteration": 28,
+      "Fitness": 17448
+    },
+    {
+      "Iteration": 29,
+      "Fitness": 17448
+    },
+    {
+      "Iteration": 30,
+      "Fitness": 17094
+    },
+    {
+      "Iteration": 31,
+      "Fitness": 17094
+    },
+    {
+      "Iteration": 32,
+      "Fitness": 17094
+    },
+    {
+      "Iteration": 33,
+      "Fitness": 16381
+    },
+    {
+      "Iteration": 34,
+      "Fitness": 16374
+    },
+    {
+      "Iteration": 35,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 36,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 37,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 38,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 39,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 40,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 41,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 42,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 43,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 44,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 45,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 46,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 47,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 48,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 49,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 50,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 51,
+      "Fitness": 15434
+    },
+    {
+      "Iteration": 52,
+      "Fitness": 15434
+    },
+    {
+      "Iteration": 53,
+      "Fitness": 15434
+    },
+    {
+      "Iteration": 54,
+      "Fitness": 15270
+    },
+    {
+      "Iteration": 55,
+      "Fitness": 14741
+    },
+    {
+      "Iteration": 56,
+      "Fitness": 14741
+    },
+    {
+      "Iteration": 57,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 58,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 59,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 60,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 61,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 62,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 63,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 64,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 65,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 66,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 67,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 68,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 69,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 70,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 71,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 72,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 73,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 74,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 75,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 76,
+      "Fitness": 14132
+    },
+    {
+      "Iteration": 77,
+      "Fitness": 14132
+    },
+    {
+      "Iteration": 78,
+      "Fitness": 14132
+    },
+    {
+      "Iteration": 79,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 80,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 81,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 82,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 83,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 84,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 85,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 86,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 87,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 88,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 89,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 90,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 91,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 92,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 93,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 94,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 95,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 96,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 97,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 98,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 99,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 100,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 101,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 102,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 103,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 104,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 105,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 106,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 107,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 108,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 109,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 110,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 111,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 112,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 113,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 114,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 115,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 116,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 117,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 118,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 119,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 120,
+      "Fitness": 13179
+    },
+    {
+      "Iteration": 121,
+      "Fitness": 13179
+    },
+    {
+      "Iteration": 122,
+      "Fitness": 13179
+    },
+    {
+      "Iteration": 123,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 124,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 125,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 126,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 127,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 128,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 129,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 130,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 131,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 132,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 133,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 134,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 135,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 136,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 137,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 138,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 139,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 140,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 141,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 142,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 143,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 144,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 145,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 146,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 147,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 148,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 149,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 150,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 151,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 152,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 153,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 154,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 155,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 156,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 157,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 158,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 159,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 160,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 161,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 162,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 163,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 164,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 165,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 166,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 167,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 168,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 169,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 170,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 171,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 172,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 173,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 174,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 175,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 176,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 177,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 178,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 179,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 180,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 181,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 182,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 183,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 184,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 185,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 186,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 187,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 188,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 189,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 190,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 191,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 192,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 193,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 194,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 195,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 196,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 197,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 198,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 199,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 200,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 201,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 202,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 203,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 204,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 205,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 206,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 207,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 208,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 209,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 210,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 211,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 212,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 213,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 214,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 215,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 216,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 217,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 218,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 219,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 220,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 221,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 222,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 223,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 224,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 225,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 226,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 227,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 228,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 229,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 230,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 231,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 232,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 233,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 234,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 235,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 236,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 237,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 238,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 239,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 240,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 241,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 242,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 243,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 244,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 245,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 246,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 247,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 248,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 249,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 250,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 251,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 252,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 253,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 254,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 255,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 256,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 257,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 258,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 259,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 260,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 261,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 262,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 263,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 264,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 265,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 266,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 267,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 268,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 269,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 270,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 271,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 272,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 273,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 274,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 275,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 276,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 277,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 278,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 279,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 280,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 281,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 282,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 283,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 284,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 285,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 286,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 287,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 288,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 289,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 290,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 291,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 292,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 293,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 294,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 295,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 296,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 297,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 298,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 299,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 300,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 301,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 302,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 303,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 304,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 305,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 306,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 307,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 308,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 309,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 310,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 311,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 312,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 313,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 314,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 315,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 316,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 317,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 318,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 319,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 320,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 321,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 322,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 323,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 324,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 325,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 326,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 327,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 328,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 329,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 330,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 331,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 332,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 333,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 334,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 335,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 336,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 337,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 338,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 339,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 340,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 341,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 342,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 343,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 344,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 345,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 346,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 347,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 348,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 349,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 350,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 351,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 352,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 353,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 354,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 355,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 356,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 357,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 358,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 359,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 360,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 361,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 362,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 363,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 364,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 365,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 366,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 367,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 368,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 369,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 370,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 371,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 372,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 373,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 374,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 375,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 376,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 377,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 378,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 379,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 380,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 381,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 382,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 383,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 384,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 385,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 386,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 387,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 388,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 389,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 390,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 391,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 392,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 393,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 394,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 395,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 396,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 397,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 398,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 399,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 400,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 401,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 402,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 403,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 404,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 405,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 406,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 407,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 408,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 409,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 410,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 411,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 412,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 413,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 414,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 415,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 416,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 417,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 418,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 419,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 420,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 421,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 422,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 423,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 424,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 425,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 426,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 427,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 428,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 429,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 430,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 431,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 432,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 433,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 434,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 435,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 436,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 437,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 438,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 439,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 440,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 441,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 442,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 443,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 444,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 445,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 446,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 447,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 448,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 449,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 450,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 451,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 452,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 453,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 454,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 455,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 456,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 457,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 458,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 459,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 460,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 461,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 462,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 463,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 464,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 465,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 466,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 467,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 468,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 469,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 470,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 471,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 472,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 473,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 474,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 475,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 476,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 477,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 478,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 479,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 480,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 481,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 482,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 483,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 484,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 485,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 486,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 487,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 488,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 489,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 490,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 491,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 492,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 493,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 494,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 495,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 496,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 497,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 498,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 499,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 500,
+      "Fitness": 32665
+    }
+  ],
+  "RawFitnessPerIteration": [
+    {
+      "Iteration": 1,
+      "Fitness": 161
+    },
+    {
+      "Iteration": 2,
+      "Fitness": 161
+    },
+    {
+      "Iteration": 3,
+      "Fitness": 154
+    },
+    {
+      "Iteration": 4,
+      "Fitness": 171
+    },
+    {
+      "Iteration": 5,
+      "Fitness": 131
+    },
+    {
+      "Iteration": 6,
+      "Fitness": 131
+    },
+    {
+      "Iteration": 7,
+      "Fitness": 146
+    },
+    {
+      "Iteration": 8,
+      "Fitness": 146
+    },
+    {
+      "Iteration": 9,
+      "Fitness": 132
+    },
+    {
+      "Iteration": 10,
+      "Fitness": 132
+    },
+    {
+      "Iteration": 11,
+      "Fitness": 132
+    },
+    {
+      "Iteration": 12,
+      "Fitness": 126
+    },
+    {
+      "Iteration": 13,
+      "Fitness": 118
+    },
+    {
+      "Iteration": 14,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 15,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 16,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 17,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 18,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 19,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 20,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 21,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 22,
+      "Fitness": 125
+    },
+    {
+      "Iteration": 23,
+      "Fitness": 125
+    },
+    {
+      "Iteration": 24,
+      "Fitness": 108
+    },
+    {
+      "Iteration": 25,
+      "Fitness": 105
+    },
+    {
+      "Iteration": 26,
+      "Fitness": 105
+    },
+    {
+      "Iteration": 27,
+      "Fitness": 105
+    },
+    {
+      "Iteration": 28,
+      "Fitness": 94
+    },
+    {
+      "Iteration": 29,
+      "Fitness": 94
+    },
+    {
+      "Iteration": 30,
+      "Fitness": 115
+    },
+    {
+      "Iteration": 31,
+      "Fitness": 115
+    },
+    {
+      "Iteration": 32,
+      "Fitness": 115
+    },
+    {
+      "Iteration": 33,
+      "Fitness": 76
+    },
+    {
+      "Iteration": 34,
+      "Fitness": 81
+    },
+    {
+      "Iteration": 35,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 36,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 37,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 38,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 39,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 40,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 41,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 42,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 43,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 44,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 45,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 46,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 47,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 48,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 49,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 50,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 51,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 52,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 53,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 54,
+      "Fitness": 87
+    },
+    {
+      "Iteration": 55,
+      "Fitness": 84
+    },
+    {
+      "Iteration": 56,
+      "Fitness": 84
+    },
+    {
+      "Iteration": 57,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 58,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 59,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 60,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 61,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 62,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 63,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 64,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 65,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 66,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 67,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 68,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 69,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 70,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 71,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 72,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 73,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 74,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 75,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 76,
+      "Fitness": 72
+    },
+    {
+      "Iteration": 77,
+      "Fitness": 72
+    },
+    {
+      "Iteration": 78,
+      "Fitness": 72
+    },
+    {
+      "Iteration": 79,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 80,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 81,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 82,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 83,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 84,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 85,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 86,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 87,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 88,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 89,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 90,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 91,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 92,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 93,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 94,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 95,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 96,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 97,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 98,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 99,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 100,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 101,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 102,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 103,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 104,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 105,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 106,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 107,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 108,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 109,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 110,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 111,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 112,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 113,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 114,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 115,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 116,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 117,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 118,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 119,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 120,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 121,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 122,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 123,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 124,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 125,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 126,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 127,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 128,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 129,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 130,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 131,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 132,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 133,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 134,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 135,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 136,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 137,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 138,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 139,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 140,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 141,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 142,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 143,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 144,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 145,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 146,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 147,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 148,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 149,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 150,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 151,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 152,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 153,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 154,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 155,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 156,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 157,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 158,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 159,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 160,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 161,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 162,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 163,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 164,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 165,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 166,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 167,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 168,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 169,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 170,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 171,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 172,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 173,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 174,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 175,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 176,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 177,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 178,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 179,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 180,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 181,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 182,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 183,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 184,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 185,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 186,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 187,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 188,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 189,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 190,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 191,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 192,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 193,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 194,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 195,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 196,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 197,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 198,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 199,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 200,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 201,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 202,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 203,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 204,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 205,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 206,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 207,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 208,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 209,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 210,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 211,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 212,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 213,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 214,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 215,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 216,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 217,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 218,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 219,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 220,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 221,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 222,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 223,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 224,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 225,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 226,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 227,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 228,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 229,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 230,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 231,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 232,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 233,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 234,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 235,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 236,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 237,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 238,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 239,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 240,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 241,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 242,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 243,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 244,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 245,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 246,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 247,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 248,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 249,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 250,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 251,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 252,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 253,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 254,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 255,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 256,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 257,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 258,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 259,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 260,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 261,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 262,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 263,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 264,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 265,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 266,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 267,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 268,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 269,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 270,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 271,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 272,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 273,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 274,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 275,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 276,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 277,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 278,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 279,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 280,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 281,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 282,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 283,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 284,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 285,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 286,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 287,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 288,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 289,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 290,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 291,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 292,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 293,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 294,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 295,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 296,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 297,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 298,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 299,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 300,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 301,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 302,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 303,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 304,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 305,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 306,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 307,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 308,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 309,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 310,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 311,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 312,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 313,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 314,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 315,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 316,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 317,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 318,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 319,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 320,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 321,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 322,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 323,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 324,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 325,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 326,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 327,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 328,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 329,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 330,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 331,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 332,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 333,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 334,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 335,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 336,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 337,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 338,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 339,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 340,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 341,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 342,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 343,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 344,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 345,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 346,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 347,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 348,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 349,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 350,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 351,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 352,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 353,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 354,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 355,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 356,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 357,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 358,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 359,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 360,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 361,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 362,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 363,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 364,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 365,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 366,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 367,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 368,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 369,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 370,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 371,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 372,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 373,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 374,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 375,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 376,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 377,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 378,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 379,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 380,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 381,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 382,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 383,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 384,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 385,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 386,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 387,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 388,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 389,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 390,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 391,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 392,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 393,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 394,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 395,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 396,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 397,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 398,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 399,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 400,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 401,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 402,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 403,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 404,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 405,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 406,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 407,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 408,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 409,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 410,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 411,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 412,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 413,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 414,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 415,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 416,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 417,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 418,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 419,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 420,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 421,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 422,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 423,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 424,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 425,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 426,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 427,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 428,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 429,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 430,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 431,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 432,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 433,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 434,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 435,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 436,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 437,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 438,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 439,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 440,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 441,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 442,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 443,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 444,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 445,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 446,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 447,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 448,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 449,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 450,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 451,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 452,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 453,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 454,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 455,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 456,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 457,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 458,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 459,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 460,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 461,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 462,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 463,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 464,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 465,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 466,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 467,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 468,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 469,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 470,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 471,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 472,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 473,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 474,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 475,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 476,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 477,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 478,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 479,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 480,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 481,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 482,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 483,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 484,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 485,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 486,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 487,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 488,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 489,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 490,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 491,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 492,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 493,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 494,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 495,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 496,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 497,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 498,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 499,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 500,
+      "Fitness": 850
+    }
+  ],
+  "PopulationFitnessPerIteration": [
+    {
+      "Iteration": 1,
+      "Fitness": 23581
+    },
+    {
+      "Iteration": 2,
+      "Fitness": 23581
+    },
+    {
+      "Iteration": 3,
+      "Fitness": 23430
+    },
+    {
+      "Iteration": 4,
+      "Fitness": 22917
+    },
+    {
+      "Iteration": 5,
+      "Fitness": 21229
+    },
+    {
+      "Iteration": 6,
+      "Fitness": 21229
+    },
+    {
+      "Iteration": 7,
+      "Fitness": 20915
+    },
+    {
+      "Iteration": 8,
+      "Fitness": 20915
+    },
+    {
+      "Iteration": 9,
+      "Fitness": 20518
+    },
+    {
+      "Iteration": 10,
+      "Fitness": 20380
+    },
+    {
+      "Iteration": 11,
+      "Fitness": 20380
+    },
+    {
+      "Iteration": 12,
+      "Fitness": 20227
+    },
+    {
+      "Iteration": 13,
+      "Fitness": 19700
+    },
+    {
+      "Iteration": 14,
+      "Fitness": 19380
+    },
+    {
+      "Iteration": 15,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 16,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 17,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 18,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 19,
+      "Fitness": 18890
+    },
+    {
+      "Iteration": 20,
+      "Fitness": 18882
+    },
+    {
+      "Iteration": 21,
+      "Fitness": 18882
+    },
+    {
+      "Iteration": 22,
+      "Fitness": 18259
+    },
+    {
+      "Iteration": 23,
+      "Fitness": 18259
+    },
+    {
+      "Iteration": 24,
+      "Fitness": 18023
+    },
+    {
+      "Iteration": 25,
+      "Fitness": 17635
+    },
+    {
+      "Iteration": 26,
+      "Fitness": 17635
+    },
+    {
+      "Iteration": 27,
+      "Fitness": 17635
+    },
+    {
+      "Iteration": 28,
+      "Fitness": 17448
+    },
+    {
+      "Iteration": 29,
+      "Fitness": 17448
+    },
+    {
+      "Iteration": 30,
+      "Fitness": 17094
+    },
+    {
+      "Iteration": 31,
+      "Fitness": 17094
+    },
+    {
+      "Iteration": 32,
+      "Fitness": 17094
+    },
+    {
+      "Iteration": 33,
+      "Fitness": 16381
+    },
+    {
+      "Iteration": 34,
+      "Fitness": 16374
+    },
+    {
+      "Iteration": 35,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 36,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 37,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 38,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 39,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 40,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 41,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 42,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 43,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 44,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 45,
+      "Fitness": 16137
+    },
+    {
+      "Iteration": 46,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 47,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 48,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 49,
+      "Fitness": 15615
+    },
+    {
+      "Iteration": 50,
+      "Fitness": 15538
+    },
+    {
+      "Iteration": 51,
+      "Fitness": 15434
+    },
+    {
+      "Iteration": 52,
+      "Fitness": 15434
+    },
+    {
+      "Iteration": 53,
+      "Fitness": 15434
+    },
+    {
+      "Iteration": 54,
+      "Fitness": 15270
+    },
+    {
+      "Iteration": 55,
+      "Fitness": 14741
+    },
+    {
+      "Iteration": 56,
+      "Fitness": 14741
+    },
+    {
+      "Iteration": 57,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 58,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 59,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 60,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 61,
+      "Fitness": 14740
+    },
+    {
+      "Iteration": 62,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 63,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 64,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 65,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 66,
+      "Fitness": 14508
+    },
+    {
+      "Iteration": 67,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 68,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 69,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 70,
+      "Fitness": 14334
+    },
+    {
+      "Iteration": 71,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 72,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 73,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 74,
+      "Fitness": 14228
+    },
+    {
+      "Iteration": 75,
+      "Fitness": 14196
+    },
+    {
+      "Iteration": 76,
+      "Fitness": 14132
+    },
+    {
+      "Iteration": 77,
+      "Fitness": 14132
+    },
+    {
+      "Iteration": 78,
+      "Fitness": 14132
+    },
+    {
+      "Iteration": 79,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 80,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 81,
+      "Fitness": 14005
+    },
+    {
+      "Iteration": 82,
+      "Fitness": 13884
+    },
+    {
+      "Iteration": 83,
+      "Fitness": 13884
+    },
+    {
+      "Iteration": 84,
+      "Fitness": 13884
+    },
+    {
+      "Iteration": 85,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 86,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 87,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 88,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 89,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 90,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 91,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 92,
+      "Fitness": 13868
+    },
+    {
+      "Iteration": 93,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 94,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 95,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 96,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 97,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 98,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 99,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 100,
+      "Fitness": 13775
+    },
+    {
+      "Iteration": 101,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 102,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 103,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 104,
+      "Fitness": 13691
+    },
+    {
+      "Iteration": 105,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 106,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 107,
+      "Fitness": 13436
+    },
+    {
+      "Iteration": 108,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 109,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 110,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 111,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 112,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 113,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 114,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 115,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 116,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 117,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 118,
+      "Fitness": 13392
+    },
+    {
+      "Iteration": 119,
+      "Fitness": 13380
+    },
+    {
+      "Iteration": 120,
+      "Fitness": 13179
+    },
+    {
+      "Iteration": 121,
+      "Fitness": 13179
+    },
+    {
+      "Iteration": 122,
+      "Fitness": 13179
+    },
+    {
+      "Iteration": 123,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 124,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 125,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 126,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 127,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 128,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 129,
+      "Fitness": 13163
+    },
+    {
+      "Iteration": 130,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 131,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 132,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 133,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 134,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 135,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 136,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 137,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 138,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 139,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 140,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 141,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 142,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 143,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 144,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 145,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 146,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 147,
+      "Fitness": 13041
+    },
+    {
+      "Iteration": 148,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 149,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 150,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 151,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 152,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 153,
+      "Fitness": 12992
+    },
+    {
+      "Iteration": 154,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 155,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 156,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 157,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 158,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 159,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 160,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 161,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 162,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 163,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 164,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 165,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 166,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 167,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 168,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 169,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 170,
+      "Fitness": 12668
+    },
+    {
+      "Iteration": 171,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 172,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 173,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 174,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 175,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 176,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 177,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 178,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 179,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 180,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 181,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 182,
+      "Fitness": 12627
+    },
+    {
+      "Iteration": 183,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 184,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 185,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 186,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 187,
+      "Fitness": 12573
+    },
+    {
+      "Iteration": 188,
+      "Fitness": 12499
+    },
+    {
+      "Iteration": 189,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 190,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 191,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 192,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 193,
+      "Fitness": 12481
+    },
+    {
+      "Iteration": 194,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 195,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 196,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 197,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 198,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 199,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 200,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 201,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 202,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 203,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 204,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 205,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 206,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 207,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 208,
+      "Fitness": 12353
+    },
+    {
+      "Iteration": 209,
+      "Fitness": 11847
+    },
+    {
+      "Iteration": 210,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 211,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 212,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 213,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 214,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 215,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 216,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 217,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 218,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 219,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 220,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 221,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 222,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 223,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 224,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 225,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 226,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 227,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 228,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 229,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 230,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 231,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 232,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 233,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 234,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 235,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 236,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 237,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 238,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 239,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 240,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 241,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 242,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 243,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 244,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 245,
+      "Fitness": 11712
+    },
+    {
+      "Iteration": 246,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 247,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 248,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 249,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 250,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 251,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 252,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 253,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 254,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 255,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 256,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 257,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 258,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 259,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 260,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 261,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 262,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 263,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 264,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 265,
+      "Fitness": 11692
+    },
+    {
+      "Iteration": 266,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 267,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 268,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 269,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 270,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 271,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 272,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 273,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 274,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 275,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 276,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 277,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 278,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 279,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 280,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 281,
+      "Fitness": 11649
+    },
+    {
+      "Iteration": 282,
+      "Fitness": 11622
+    },
+    {
+      "Iteration": 283,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 284,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 285,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 286,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 287,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 288,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 289,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 290,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 291,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 292,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 293,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 294,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 295,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 296,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 297,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 298,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 299,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 300,
+      "Fitness": 11611
+    },
+    {
+      "Iteration": 301,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 302,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 303,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 304,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 305,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 306,
+      "Fitness": 32497
+    },
+    {
+      "Iteration": 307,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 308,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 309,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 310,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 311,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 312,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 313,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 314,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 315,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 316,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 317,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 318,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 319,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 320,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 321,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 322,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 323,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 324,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 325,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 326,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 327,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 328,
+      "Fitness": 33025
+    },
+    {
+      "Iteration": 329,
+      "Fitness": 31933
+    },
+    {
+      "Iteration": 330,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 331,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 332,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 333,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 334,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 335,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 336,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 337,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 338,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 339,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 340,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 341,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 342,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 343,
+      "Fitness": 32093
+    },
+    {
+      "Iteration": 344,
+      "Fitness": 33022
+    },
+    {
+      "Iteration": 345,
+      "Fitness": 33022
+    },
+    {
+      "Iteration": 346,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 347,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 348,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 349,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 350,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 351,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 352,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 353,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 354,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 355,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 356,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 357,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 358,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 359,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 360,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 361,
+      "Fitness": 33442
+    },
+    {
+      "Iteration": 362,
+      "Fitness": 33835
+    },
+    {
+      "Iteration": 363,
+      "Fitness": 33835
+    },
+    {
+      "Iteration": 364,
+      "Fitness": 33835
+    },
+    {
+      "Iteration": 365,
+      "Fitness": 33835
+    },
+    {
+      "Iteration": 366,
+      "Fitness": 33835
+    },
+    {
+      "Iteration": 367,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 368,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 369,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 370,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 371,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 372,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 373,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 374,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 375,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 376,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 377,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 378,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 379,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 380,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 381,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 382,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 383,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 384,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 385,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 386,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 387,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 388,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 389,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 390,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 391,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 392,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 393,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 394,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 395,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 396,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 397,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 398,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 399,
+      "Fitness": 32857
+    },
+    {
+      "Iteration": 400,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 401,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 402,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 403,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 404,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 405,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 406,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 407,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 408,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 409,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 410,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 411,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 412,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 413,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 414,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 415,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 416,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 417,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 418,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 419,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 420,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 421,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 422,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 423,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 424,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 425,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 426,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 427,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 428,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 429,
+      "Fitness": 32064
+    },
+    {
+      "Iteration": 430,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 431,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 432,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 433,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 434,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 435,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 436,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 437,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 438,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 439,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 440,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 441,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 442,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 443,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 444,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 445,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 446,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 447,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 448,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 449,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 450,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 451,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 452,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 453,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 454,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 455,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 456,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 457,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 458,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 459,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 460,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 461,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 462,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 463,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 464,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 465,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 466,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 467,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 468,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 469,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 470,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 471,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 472,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 473,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 474,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 475,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 476,
+      "Fitness": 32665
+    },
+    {
+      "Iteration": 477,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 478,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 479,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 480,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 481,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 482,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 483,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 484,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 485,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 486,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 487,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 488,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 489,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 490,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 491,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 492,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 493,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 494,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 495,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 496,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 497,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 498,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 499,
+      "Fitness": 32309
+    },
+    {
+      "Iteration": 500,
+      "Fitness": 32309
+    }
+  ],
+  "PopulationRawFitnessPerIteration": [
+    {
+      "Iteration": 1,
+      "Fitness": 161
+    },
+    {
+      "Iteration": 2,
+      "Fitness": 161
+    },
+    {
+      "Iteration": 3,
+      "Fitness": 154
+    },
+    {
+      "Iteration": 4,
+      "Fitness": 171
+    },
+    {
+      "Iteration": 5,
+      "Fitness": 131
+    },
+    {
+      "Iteration": 6,
+      "Fitness": 131
+    },
+    {
+      "Iteration": 7,
+      "Fitness": 146
+    },
+    {
+      "Iteration": 8,
+      "Fitness": 146
+    },
+    {
+      "Iteration": 9,
+      "Fitness": 132
+    },
+    {
+      "Iteration": 10,
+      "Fitness": 118
+    },
+    {
+      "Iteration": 11,
+      "Fitness": 118
+    },
+    {
+      "Iteration": 12,
+      "Fitness": 126
+    },
+    {
+      "Iteration": 13,
+      "Fitness": 118
+    },
+    {
+      "Iteration": 14,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 15,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 16,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 17,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 18,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 19,
+      "Fitness": 122
+    },
+    {
+      "Iteration": 20,
+      "Fitness": 120
+    },
+    {
+      "Iteration": 21,
+      "Fitness": 120
+    },
+    {
+      "Iteration": 22,
+      "Fitness": 125
+    },
+    {
+      "Iteration": 23,
+      "Fitness": 125
+    },
+    {
+      "Iteration": 24,
+      "Fitness": 108
+    },
+    {
+      "Iteration": 25,
+      "Fitness": 105
+    },
+    {
+      "Iteration": 26,
+      "Fitness": 105
+    },
+    {
+      "Iteration": 27,
+      "Fitness": 105
+    },
+    {
+      "Iteration": 28,
+      "Fitness": 94
+    },
+    {
+      "Iteration": 29,
+      "Fitness": 94
+    },
+    {
+      "Iteration": 30,
+      "Fitness": 115
+    },
+    {
+      "Iteration": 31,
+      "Fitness": 115
+    },
+    {
+      "Iteration": 32,
+      "Fitness": 115
+    },
+    {
+      "Iteration": 33,
+      "Fitness": 76
+    },
+    {
+      "Iteration": 34,
+      "Fitness": 81
+    },
+    {
+      "Iteration": 35,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 36,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 37,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 38,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 39,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 40,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 41,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 42,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 43,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 44,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 45,
+      "Fitness": 90
+    },
+    {
+      "Iteration": 46,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 47,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 48,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 49,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 50,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 51,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 52,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 53,
+      "Fitness": 89
+    },
+    {
+      "Iteration": 54,
+      "Fitness": 87
+    },
+    {
+      "Iteration": 55,
+      "Fitness": 84
+    },
+    {
+      "Iteration": 56,
+      "Fitness": 84
+    },
+    {
+      "Iteration": 57,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 58,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 59,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 60,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 61,
+      "Fitness": 85
+    },
+    {
+      "Iteration": 62,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 63,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 64,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 65,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 66,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 67,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 68,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 69,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 70,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 71,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 72,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 73,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 74,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 75,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 76,
+      "Fitness": 72
+    },
+    {
+      "Iteration": 77,
+      "Fitness": 72
+    },
+    {
+      "Iteration": 78,
+      "Fitness": 72
+    },
+    {
+      "Iteration": 79,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 80,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 81,
+      "Fitness": 71
+    },
+    {
+      "Iteration": 82,
+      "Fitness": 40
+    },
+    {
+      "Iteration": 83,
+      "Fitness": 40
+    },
+    {
+      "Iteration": 84,
+      "Fitness": 40
+    },
+    {
+      "Iteration": 85,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 86,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 87,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 88,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 89,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 90,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 91,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 92,
+      "Fitness": 69
+    },
+    {
+      "Iteration": 93,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 94,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 95,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 96,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 97,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 98,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 99,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 100,
+      "Fitness": 65
+    },
+    {
+      "Iteration": 101,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 102,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 103,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 104,
+      "Fitness": 68
+    },
+    {
+      "Iteration": 105,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 106,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 107,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 108,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 109,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 110,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 111,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 112,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 113,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 114,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 115,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 116,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 117,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 118,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 119,
+      "Fitness": 76
+    },
+    {
+      "Iteration": 120,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 121,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 122,
+      "Fitness": 75
+    },
+    {
+      "Iteration": 123,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 124,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 125,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 126,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 127,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 128,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 129,
+      "Fitness": 79
+    },
+    {
+      "Iteration": 130,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 131,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 132,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 133,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 134,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 135,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 136,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 137,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 138,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 139,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 140,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 141,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 142,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 143,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 144,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 145,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 146,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 147,
+      "Fitness": 63
+    },
+    {
+      "Iteration": 148,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 149,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 150,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 151,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 152,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 153,
+      "Fitness": 66
+    },
+    {
+      "Iteration": 154,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 155,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 156,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 157,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 158,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 159,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 160,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 161,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 162,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 163,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 164,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 165,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 166,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 167,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 168,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 169,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 170,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 171,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 172,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 173,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 174,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 175,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 176,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 177,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 178,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 179,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 180,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 181,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 182,
+      "Fitness": 96
+    },
+    {
+      "Iteration": 183,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 184,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 185,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 186,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 187,
+      "Fitness": 101
+    },
+    {
+      "Iteration": 188,
+      "Fitness": 86
+    },
+    {
+      "Iteration": 189,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 190,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 191,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 192,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 193,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 194,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 195,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 196,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 197,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 198,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 199,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 200,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 201,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 202,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 203,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 204,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 205,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 206,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 207,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 208,
+      "Fitness": 99
+    },
+    {
+      "Iteration": 209,
+      "Fitness": 93
+    },
+    {
+      "Iteration": 210,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 211,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 212,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 213,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 214,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 215,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 216,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 217,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 218,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 219,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 220,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 221,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 222,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 223,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 224,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 225,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 226,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 227,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 228,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 229,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 230,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 231,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 232,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 233,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 234,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 235,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 236,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 237,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 238,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 239,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 240,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 241,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 242,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 243,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 244,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 245,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 246,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 247,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 248,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 249,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 250,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 251,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 252,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 253,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 254,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 255,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 256,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 257,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 258,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 259,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 260,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 261,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 262,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 263,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 264,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 265,
+      "Fitness": 74
+    },
+    {
+      "Iteration": 266,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 267,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 268,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 269,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 270,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 271,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 272,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 273,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 274,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 275,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 276,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 277,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 278,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 279,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 280,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 281,
+      "Fitness": 78
+    },
+    {
+      "Iteration": 282,
+      "Fitness": 77
+    },
+    {
+      "Iteration": 283,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 284,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 285,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 286,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 287,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 288,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 289,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 290,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 291,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 292,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 293,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 294,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 295,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 296,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 297,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 298,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 299,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 300,
+      "Fitness": 80
+    },
+    {
+      "Iteration": 301,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 302,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 303,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 304,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 305,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 306,
+      "Fitness": 811
+    },
+    {
+      "Iteration": 307,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 308,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 309,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 310,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 311,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 312,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 313,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 314,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 315,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 316,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 317,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 318,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 319,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 320,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 321,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 322,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 323,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 324,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 325,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 326,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 327,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 328,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 329,
+      "Fitness": 813
+    },
+    {
+      "Iteration": 330,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 331,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 332,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 333,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 334,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 335,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 336,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 337,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 338,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 339,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 340,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 341,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 342,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 343,
+      "Fitness": 818
+    },
+    {
+      "Iteration": 344,
+      "Fitness": 821
+    },
+    {
+      "Iteration": 345,
+      "Fitness": 821
+    },
+    {
+      "Iteration": 346,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 347,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 348,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 349,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 350,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 351,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 352,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 353,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 354,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 355,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 356,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 357,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 358,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 359,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 360,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 361,
+      "Fitness": 828
+    },
+    {
+      "Iteration": 362,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 363,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 364,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 365,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 366,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 367,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 368,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 369,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 370,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 371,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 372,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 373,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 374,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 375,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 376,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 377,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 378,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 379,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 380,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 381,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 382,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 383,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 384,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 385,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 386,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 387,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 388,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 389,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 390,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 391,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 392,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 393,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 394,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 395,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 396,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 397,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 398,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 399,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 400,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 401,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 402,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 403,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 404,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 405,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 406,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 407,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 408,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 409,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 410,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 411,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 412,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 413,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 414,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 415,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 416,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 417,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 418,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 419,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 420,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 421,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 422,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 423,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 424,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 425,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 426,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 427,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 428,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 429,
+      "Fitness": 832
+    },
+    {
+      "Iteration": 430,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 431,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 432,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 433,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 434,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 435,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 436,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 437,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 438,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 439,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 440,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 441,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 442,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 443,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 444,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 445,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 446,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 447,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 448,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 449,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 450,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 451,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 452,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 453,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 454,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 455,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 456,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 457,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 458,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 459,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 460,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 461,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 462,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 463,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 464,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 465,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 466,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 467,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 468,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 469,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 470,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 471,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 472,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 473,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 474,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 475,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 476,
+      "Fitness": 850
+    },
+    {
+      "Iteration": 477,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 478,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 479,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 480,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 481,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 482,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 483,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 484,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 485,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 486,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 487,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 488,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 489,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 490,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 491,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 492,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 493,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 494,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 495,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 496,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 497,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 498,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 499,
+      "Fitness": 853
+    },
+    {
+      "Iteration": 500,
+      "Fitness": 853
+    }
+  ],
+  "DiversityPerIteration": [
+    {
+      "Iteration": 1,
+      "Diversity": 0.9551282051282006
+    },
+    {
+      "Iteration": 2,
+      "Diversity": 0.9516799292661315
+    },
+    {
+      "Iteration": 3,
+      "Diversity": 0.9474801061007909
+    },
+    {
+      "Iteration": 4,
+      "Diversity": 0.9337754199823127
+    },
+    {
+      "Iteration": 5,
+      "Diversity": 0.9062334217506595
+    },
+    {
+      "Iteration": 6,
+      "Diversity": 0.9088859416445577
+    },
+    {
+      "Iteration": 7,
+      "Diversity": 0.9148541114058311
+    },
+    {
+      "Iteration": 8,
+      "Diversity": 0.8952254641909783
+    },
+    {
+      "Iteration": 9,
+      "Diversity": 0.8981432360742676
+    },
+    {
+      "Iteration": 10,
+      "Diversity": 0.9026083112289974
+    },
+    {
+      "Iteration": 11,
+      "Diversity": 0.8642793987621549
+    },
+    {
+      "Iteration": 12,
+      "Diversity": 0.8701149425287338
+    },
+    {
+      "Iteration": 13,
+      "Diversity": 0.8759504862953115
+    },
+    {
+      "Iteration": 14,
+      "Diversity": 0.8841732979663989
+    },
+    {
+      "Iteration": 15,
+      "Diversity": 0.8674624226348354
+    },
+    {
+      "Iteration": 16,
+      "Diversity": 0.8642351900972566
+    },
+    {
+      "Iteration": 17,
+      "Diversity": 0.875508399646327
+    },
+    {
+      "Iteration": 18,
+      "Diversity": 0.8670645446507502
+    },
+    {
+      "Iteration": 19,
+      "Diversity": 0.8469496021220142
+    },
+    {
+      "Iteration": 20,
+      "Diversity": 0.8707338638373096
+    },
+    {
+      "Iteration": 21,
+      "Diversity": 0.8501768346595923
+    },
+    {
+      "Iteration": 22,
+      "Diversity": 0.8497789566755084
+    },
+    {
+      "Iteration": 23,
+      "Diversity": 0.8476127320954906
+    },
+    {
+      "Iteration": 24,
+      "Diversity": 0.8318744473916871
+    },
+    {
+      "Iteration": 25,
+      "Diversity": 0.8230327144120232
+    },
+    {
+      "Iteration": 26,
+      "Diversity": 0.8106100795755946
+    },
+    {
+      "Iteration": 27,
+      "Diversity": 0.8090185676392565
+    },
+    {
+      "Iteration": 28,
+      "Diversity": 0.8069407603890343
+    },
+    {
+      "Iteration": 29,
+      "Diversity": 0.8294429708222802
+    },
+    {
+      "Iteration": 30,
+      "Diversity": 0.8290893015030939
+    },
+    {
+      "Iteration": 31,
+      "Diversity": 0.7812555260831128
+    },
+    {
+      "Iteration": 32,
+      "Diversity": 0.7887709991158263
+    },
+    {
+      "Iteration": 33,
+      "Diversity": 0.7767904509283821
+    },
+    {
+      "Iteration": 34,
+      "Diversity": 0.812422634836427
+    },
+    {
+      "Iteration": 35,
+      "Diversity": 0.7836427939876204
+    },
+    {
+      "Iteration": 36,
+      "Diversity": 0.7878868258178586
+    },
+    {
+      "Iteration": 37,
+      "Diversity": 0.7756410256410254
+    },
+    {
+      "Iteration": 38,
+      "Diversity": 0.8039345711759505
+    },
+    {
+      "Iteration": 39,
+      "Diversity": 0.7803713527851459
+    },
+    {
+      "Iteration": 40,
+      "Diversity": 0.7742263483642797
+    },
+    {
+      "Iteration": 41,
+      "Diversity": 0.7599911582670209
+    },
+    {
+      "Iteration": 42,
+      "Diversity": 0.7750221043324483
+    },
+    {
+      "Iteration": 43,
+      "Diversity": 0.7764367816091954
+    },
+    {
+      "Iteration": 44,
+      "Diversity": 0.7291335101679949
+    },
+    {
+      "Iteration": 45,
+      "Diversity": 0.7844827586206896
+    },
+    {
+      "Iteration": 46,
+      "Diversity": 0.7513704686118471
+    },
+    {
+      "Iteration": 47,
+      "Diversity": 0.7933244916003528
+    },
+    {
+      "Iteration": 48,
+      "Diversity": 0.7606100795755948
+    },
+    {
+      "Iteration": 49,
+      "Diversity": 0.7963748894783382
+    },
+    {
+      "Iteration": 50,
+      "Diversity": 0.7561007957559686
+    },
+    {
+      "Iteration": 51,
+      "Diversity": 0.7690097259062781
+    },
+    {
+      "Iteration": 52,
+      "Diversity": 0.7312555260831115
+    },
+    {
+      "Iteration": 53,
+      "Diversity": 0.7422634836427945
+    },
+    {
+      "Iteration": 54,
+      "Diversity": 0.7732095490716183
+    },
+    {
+      "Iteration": 55,
+      "Diversity": 0.7171971706454461
+    },
+    {
+      "Iteration": 56,
+      "Diversity": 0.7079575596816976
+    },
+    {
+      "Iteration": 57,
+      "Diversity": 0.7562776304155621
+    },
+    {
+      "Iteration": 58,
+      "Diversity": 0.697038019451812
+    },
+    {
+      "Iteration": 59,
+      "Diversity": 0.7524314765694083
+    },
+    {
+      "Iteration": 60,
+      "Diversity": 0.7409814323607421
+    },
+    {
+      "Iteration": 61,
+      "Diversity": 0.7429266136162691
+    },
+    {
+      "Iteration": 62,
+      "Diversity": 0.772015915119363
+    },
+    {
+      "Iteration": 63,
+      "Diversity": 0.742396109637488
+    },
+    {
+      "Iteration": 64,
+      "Diversity": 0.7668435013262601
+    },
+    {
+      "Iteration": 65,
+      "Diversity": 0.7732095490716172
+    },
+    {
+      "Iteration": 66,
+      "Diversity": 0.7136162687886819
+    },
+    {
+      "Iteration": 67,
+      "Diversity": 0.6792219274977895
+    },
+    {
+      "Iteration": 68,
+      "Diversity": 0.703006189213085
+    },
+    {
+      "Iteration": 69,
+      "Diversity": 0.7342175066312991
+    },
+    {
+      "Iteration": 70,
+      "Diversity": 0.6995137046861191
+    },
+    {
+      "Iteration": 71,
+      "Diversity": 0.7307692307692313
+    },
+    {
+      "Iteration": 72,
+      "Diversity": 0.6858532272325383
+    },
+    {
+      "Iteration": 73,
+      "Diversity": 0.6972590627763054
+    },
+    {
+      "Iteration": 74,
+      "Diversity": 0.658090185676393
+    },
+    {
+      "Iteration": 75,
+      "Diversity": 0.6886383731211322
+    },
+    {
+      "Iteration": 76,
+      "Diversity": 0.6841290893015031
+    },
+    {
+      "Iteration": 77,
+      "Diversity": 0.6771441202475701
+    },
+    {
+      "Iteration": 78,
+      "Diversity": 0.6808576480990288
+    },
+    {
+      "Iteration": 79,
+      "Diversity": 0.6355879752431477
+    },
+    {
+      "Iteration": 80,
+      "Diversity": 0.665119363395226
+    },
+    {
+      "Iteration": 81,
+      "Diversity": 0.6297966401414677
+    },
+    {
+      "Iteration": 82,
+      "Diversity": 0.6299292661361625
+    },
+    {
+      "Iteration": 83,
+      "Diversity": 0.7218390804597693
+    },
+    {
+      "Iteration": 84,
+      "Diversity": 0.6240937223695854
+    },
+    {
+      "Iteration": 85,
+      "Diversity": 0.6392130857648098
+    },
+    {
+      "Iteration": 86,
+      "Diversity": 0.5754199823165337
+    },
+    {
+      "Iteration": 87,
+      "Diversity": 0.6618921308576485
+    },
+    {
+      "Iteration": 88,
+      "Diversity": 0.627984084880637
+    },
+    {
+      "Iteration": 89,
+      "Diversity": 0.6196728558797525
+    },
+    {
+      "Iteration": 90,
+      "Diversity": 0.5568965517241382
+    },
+    {
+      "Iteration": 91,
+      "Diversity": 0.5935455349248457
+    },
+    {
+      "Iteration": 92,
+      "Diversity": 0.67524314765694
+    },
+    {
+      "Iteration": 93,
+      "Diversity": 0.5365163572060122
+    },
+    {
+      "Iteration": 94,
+      "Diversity": 0.5809460654288239
+    },
+    {
+      "Iteration": 95,
+      "Diversity": 0.4934571175950489
+    },
+    {
+      "Iteration": 96,
+      "Diversity": 0.5866047745358088
+    },
+    {
+      "Iteration": 97,
+      "Diversity": 0.5977011494252864
+    },
+    {
+      "Iteration": 98,
+      "Diversity": 0.5540229885057467
+    },
+    {
+      "Iteration": 99,
+      "Diversity": 0.5036693191865607
+    },
+    {
+      "Iteration": 100,
+      "Diversity": 0.5688328912466841
+    },
+    {
+      "Iteration": 101,
+      "Diversity": 0.5939876215738282
+    },
+    {
+      "Iteration": 102,
+      "Diversity": 0.6085322723253757
+    },
+    {
+      "Iteration": 103,
+      "Diversity": 0.6204244031830238
+    },
+    {
+      "Iteration": 104,
+      "Diversity": 0.6313439434129091
+    },
+    {
+      "Iteration": 105,
+      "Diversity": 0.6064102564102559
+    },
+    {
+      "Iteration": 106,
+      "Diversity": 0.4531830238726784
+    },
+    {
+      "Iteration": 107,
+      "Diversity": 0.5336427939876218
+    },
+    {
+      "Iteration": 108,
+      "Diversity": 0.48956675508399616
+    },
+    {
+      "Iteration": 109,
+      "Diversity": 0.5090627763041555
+    },
+    {
+      "Iteration": 110,
+      "Diversity": 0.6167550839964635
+    },
+    {
+      "Iteration": 111,
+      "Diversity": 0.5496463306808133
+    },
+    {
+      "Iteration": 112,
+      "Diversity": 0.5560565870910696
+    },
+    {
+      "Iteration": 113,
+      "Diversity": 0.4920424403183025
+    },
+    {
+      "Iteration": 114,
+      "Diversity": 0.4882404951370472
+    },
+    {
+      "Iteration": 115,
+      "Diversity": 0.4992926613616271
+    },
+    {
+      "Iteration": 116,
+      "Diversity": 0.4053050397877985
+    },
+    {
+      "Iteration": 117,
+      "Diversity": 0.3710875331564987
+    },
+    {
+      "Iteration": 118,
+      "Diversity": 0.47970822281167047
+    },
+    {
+      "Iteration": 119,
+      "Diversity": 0.40119363395225455
+    },
+    {
+      "Iteration": 120,
+      "Diversity": 0.4609637488947832
+    },
+    {
+      "Iteration": 121,
+      "Diversity": 0.4558797524314766
+    },
+    {
+      "Iteration": 122,
+      "Diversity": 0.4267904509283821
+    },
+    {
+      "Iteration": 123,
+      "Diversity": 0.49526967285587986
+    },
+    {
+      "Iteration": 124,
+      "Diversity": 0.5102122015915116
+    },
+    {
+      "Iteration": 125,
+      "Diversity": 0.5685676392572943
+    },
+    {
+      "Iteration": 126,
+      "Diversity": 0.5435013262599471
+    },
+    {
+      "Iteration": 127,
+      "Diversity": 0.5741379310344827
+    },
+    {
+      "Iteration": 128,
+      "Diversity": 0.506675508399646
+    },
+    {
+      "Iteration": 129,
+      "Diversity": 0.5216180371352789
+    },
+    {
+      "Iteration": 130,
+      "Diversity": 0.49274977895667516
+    },
+    {
+      "Iteration": 131,
+      "Diversity": 0.49836427939876277
+    },
+    {
+      "Iteration": 132,
+      "Diversity": 0.46290893015030954
+    },
+    {
+      "Iteration": 133,
+      "Diversity": 0.44416445623342193
+    },
+    {
+      "Iteration": 134,
+      "Diversity": 0.43580901856763915
+    },
+    {
+      "Iteration": 135,
+      "Diversity": 0.41202475685234274
+    },
+    {
+      "Iteration": 136,
+      "Diversity": 0.38890362511052157
+    },
+    {
+      "Iteration": 137,
+      "Diversity": 0.47219274977895676
+    },
+    {
+      "Iteration": 138,
+      "Diversity": 0.3982758620689661
+    },
+    {
+      "Iteration": 139,
+      "Diversity": 0.31145004420866496
+    },
+    {
+      "Iteration": 140,
+      "Diversity": 0.30663129973474795
+    },
+    {
+      "Iteration": 141,
+      "Diversity": 0.3969053934571178
+    },
+    {
+      "Iteration": 142,
+      "Diversity": 0.34840848806366004
+    },
+    {
+      "Iteration": 143,
+      "Diversity": 0.33470380194518135
+    },
+    {
+      "Iteration": 144,
+      "Diversity": 0.3550839964633068
+    },
+    {
+      "Iteration": 145,
+      "Diversity": 0.34686118479221956
+    },
+    {
+      "Iteration": 146,
+      "Diversity": 0.41618037135278513
+    },
+    {
+      "Iteration": 147,
+      "Diversity": 0.4059239610963754
+    },
+    {
+      "Iteration": 148,
+      "Diversity": 0.3872236958443848
+    },
+    {
+      "Iteration": 149,
+      "Diversity": 0.3837754199823167
+    },
+    {
+      "Iteration": 150,
+      "Diversity": 0.37877984084880634
+    },
+    {
+      "Iteration": 151,
+      "Diversity": 0.3851458885941645
+    },
+    {
+      "Iteration": 152,
+      "Diversity": 0.3835985853227231
+    },
+    {
+      "Iteration": 153,
+      "Diversity": 0.4103448275862068
+    },
+    {
+      "Iteration": 154,
+      "Diversity": 0.408930150309461
+    },
+    {
+      "Iteration": 155,
+      "Diversity": 0.34765694076038917
+    },
+    {
+      "Iteration": 156,
+      "Diversity": 0.34571175950486294
+    },
+    {
+      "Iteration": 157,
+      "Diversity": 0.4321396993810788
+    },
+    {
+      "Iteration": 158,
+      "Diversity": 0.4096816976127323
+    },
+    {
+      "Iteration": 159,
+      "Diversity": 0.39221927497789566
+    },
+    {
+      "Iteration": 160,
+      "Diversity": 0.4057029177718832
+    },
+    {
+      "Iteration": 161,
+      "Diversity": 0.4049513704686121
+    },
+    {
+      "Iteration": 162,
+      "Diversity": 0.42320954907161856
+    },
+    {
+      "Iteration": 163,
+      "Diversity": 0.3689213085764812
+    },
+    {
+      "Iteration": 164,
+      "Diversity": 0.3872236958443856
+    },
+    {
+      "Iteration": 165,
+      "Diversity": 0.46715296198054895
+    },
+    {
+      "Iteration": 166,
+      "Diversity": 0.383554376657825
+    },
+    {
+      "Iteration": 167,
+      "Diversity": 0.4416003536693191
+    },
+    {
+      "Iteration": 168,
+      "Diversity": 0.35910698496905424
+    },
+    {
+      "Iteration": 169,
+      "Diversity": 0.4384173297966403
+    },
+    {
+      "Iteration": 170,
+      "Diversity": 0.40247568523430616
+    },
+    {
+      "Iteration": 171,
+      "Diversity": 0.4267020335985856
+    },
+    {
+      "Iteration": 172,
+      "Diversity": 0.4119805481874453
+    },
+    {
+      "Iteration": 173,
+      "Diversity": 0.4041998231653402
+    },
+    {
+      "Iteration": 174,
+      "Diversity": 0.43028293545534946
+    },
+    {
+      "Iteration": 175,
+      "Diversity": 0.4603448275862067
+    },
+    {
+      "Iteration": 176,
+      "Diversity": 0.39367816091954005
+    },
+    {
+      "Iteration": 177,
+      "Diversity": 0.4185234305923964
+    },
+    {
+      "Iteration": 178,
+      "Diversity": 0.4240495137046858
+    },
+    {
+      "Iteration": 179,
+      "Diversity": 0.4072502210433244
+    },
+    {
+      "Iteration": 180,
+      "Diversity": 0.39226348364279434
+    },
+    {
+      "Iteration": 181,
+      "Diversity": 0.4199381078691428
+    },
+    {
+      "Iteration": 182,
+      "Diversity": 0.4151193633952254
+    },
+    {
+      "Iteration": 183,
+      "Diversity": 0.4345269672855876
+    },
+    {
+      "Iteration": 184,
+      "Diversity": 0.4015915119363394
+    },
+    {
+      "Iteration": 185,
+      "Diversity": 0.46971706454465134
+    },
+    {
+      "Iteration": 186,
+      "Diversity": 0.43121131741821356
+    },
+    {
+      "Iteration": 187,
+      "Diversity": 0.40831122900088435
+    },
+    {
+      "Iteration": 188,
+      "Diversity": 0.438373121131742
+    },
+    {
+      "Iteration": 189,
+      "Diversity": 0.43598585322723266
+    },
+    {
+      "Iteration": 190,
+      "Diversity": 0.4580901856763926
+    },
+    {
+      "Iteration": 191,
+      "Diversity": 0.4351900972590629
+    },
+    {
+      "Iteration": 192,
+      "Diversity": 0.432714412024757
+    },
+    {
+      "Iteration": 193,
+      "Diversity": 0.45296198054818726
+    },
+    {
+      "Iteration": 194,
+      "Diversity": 0.4324933687002649
+    },
+    {
+      "Iteration": 195,
+      "Diversity": 0.42931034482758595
+    },
+    {
+      "Iteration": 196,
+      "Diversity": 0.4504420866489827
+    },
+    {
+      "Iteration": 197,
+      "Diversity": 0.4480106100795756
+    },
+    {
+      "Iteration": 198,
+      "Diversity": 0.43125552608311235
+    },
+    {
+      "Iteration": 199,
+      "Diversity": 0.39226348364279406
+    },
+    {
+      "Iteration": 200,
+      "Diversity": 0.4293987621573828
+    },
+    {
+      "Iteration": 201,
+      "Diversity": 0.4421308576480989
+    },
+    {
+      "Iteration": 202,
+      "Diversity": 0.44540229885057486
+    },
+    {
+      "Iteration": 203,
+      "Diversity": 0.4332891246684347
+    },
+    {
+      "Iteration": 204,
+      "Diversity": 0.42488947833775376
+    },
+    {
+      "Iteration": 205,
+      "Diversity": 0.4370026525198936
+    },
+    {
+      "Iteration": 206,
+      "Diversity": 0.4094164456233421
+    },
+    {
+      "Iteration": 207,
+      "Diversity": 0.4848806366047742
+    },
+    {
+      "Iteration": 208,
+      "Diversity": 0.44580017683465945
+    },
+    {
+      "Iteration": 209,
+      "Diversity": 0.4430592396109637
+    },
+    {
+      "Iteration": 210,
+      "Diversity": 0.4610963748894781
+    },
+    {
+      "Iteration": 211,
+      "Diversity": 0.435853227232537
+    },
+    {
+      "Iteration": 212,
+      "Diversity": 0.46715296198054834
+    },
+    {
+      "Iteration": 213,
+      "Diversity": 0.4233863837312111
+    },
+    {
+      "Iteration": 214,
+      "Diversity": 0.44858532272325463
+    },
+    {
+      "Iteration": 215,
+      "Diversity": 0.43726790450928404
+    },
+    {
+      "Iteration": 216,
+      "Diversity": 0.43594164456233453
+    },
+    {
+      "Iteration": 217,
+      "Diversity": 0.44376657824933674
+    },
+    {
+      "Iteration": 218,
+      "Diversity": 0.4026967285587978
+    },
+    {
+      "Iteration": 219,
+      "Diversity": 0.428735632183908
+    },
+    {
+      "Iteration": 220,
+      "Diversity": 0.40473032714412016
+    },
+    {
+      "Iteration": 221,
+      "Diversity": 0.43713527851458883
+    },
+    {
+      "Iteration": 222,
+      "Diversity": 0.4762157382847038
+    },
+    {
+      "Iteration": 223,
+      "Diversity": 0.46047745358090203
+    },
+    {
+      "Iteration": 224,
+      "Diversity": 0.4588859416445621
+    },
+    {
+      "Iteration": 225,
+      "Diversity": 0.4720601237842617
+    },
+    {
+      "Iteration": 226,
+      "Diversity": 0.44743589743589784
+    },
+    {
+      "Iteration": 227,
+      "Diversity": 0.4752431476569411
+    },
+    {
+      "Iteration": 228,
+      "Diversity": 0.47409372236958475
+    },
+    {
+      "Iteration": 229,
+      "Diversity": 0.47895667550839927
+    },
+    {
+      "Iteration": 230,
+      "Diversity": 0.44699381078691425
+    },
+    {
+      "Iteration": 231,
+      "Diversity": 0.43134394341290855
+    },
+    {
+      "Iteration": 232,
+      "Diversity": 0.4969053934571174
+    },
+    {
+      "Iteration": 233,
+      "Diversity": 0.4586648983200707
+    },
+    {
+      "Iteration": 234,
+      "Diversity": 0.4821396993810787
+    },
+    {
+      "Iteration": 235,
+      "Diversity": 0.47422634836427935
+    },
+    {
+      "Iteration": 236,
+      "Diversity": 0.4945623342175063
+    },
+    {
+      "Iteration": 237,
+      "Diversity": 0.4605658709106986
+    },
+    {
+      "Iteration": 238,
+      "Diversity": 0.47763041556144975
+    },
+    {
+      "Iteration": 239,
+      "Diversity": 0.47537577365163514
+    },
+    {
+      "Iteration": 240,
+      "Diversity": 0.4905835543766577
+    },
+    {
+      "Iteration": 241,
+      "Diversity": 0.48770999115826735
+    },
+    {
+      "Iteration": 242,
+      "Diversity": 0.4907603890362513
+    },
+    {
+      "Iteration": 243,
+      "Diversity": 0.404951370468612
+    },
+    {
+      "Iteration": 244,
+      "Diversity": 0.4503094606542881
+    },
+    {
+      "Iteration": 245,
+      "Diversity": 0.4688770999115824
+    },
+    {
+      "Iteration": 246,
+      "Diversity": 0.45548187444739174
+    },
+    {
+      "Iteration": 247,
+      "Diversity": 0.4999115826702032
+    },
+    {
+      "Iteration": 248,
+      "Diversity": 0.44500442086648956
+    },
+    {
+      "Iteration": 249,
+      "Diversity": 0.46131741821397
+    },
+    {
+      "Iteration": 250,
+      "Diversity": 0.4618921308576481
+    },
+    {
+      "Iteration": 251,
+      "Diversity": 0.46153846153846173
+    },
+    {
+      "Iteration": 252,
+      "Diversity": 0.4484526967285587
+    },
+    {
+      "Iteration": 253,
+      "Diversity": 0.4540671971706457
+    },
+    {
+      "Iteration": 254,
+      "Diversity": 0.40897435897435913
+    },
+    {
+      "Iteration": 255,
+      "Diversity": 0.4199823165340402
+    },
+    {
+      "Iteration": 256,
+      "Diversity": 0.442970822281167
+    },
+    {
+      "Iteration": 257,
+      "Diversity": 0.4165340406719717
+    },
+    {
+      "Iteration": 258,
+      "Diversity": 0.36525198938992054
+    },
+    {
+      "Iteration": 259,
+      "Diversity": 0.4606984969053931
+    },
+    {
+      "Iteration": 260,
+      "Diversity": 0.4245800176834659
+    },
+    {
+      "Iteration": 261,
+      "Diversity": 0.4009725906277632
+    },
+    {
+      "Iteration": 262,
+      "Diversity": 0.4294871794871794
+    },
+    {
+      "Iteration": 263,
+      "Diversity": 0.45256410256410246
+    },
+    {
+      "Iteration": 264,
+      "Diversity": 0.4002652519893899
+    },
+    {
+      "Iteration": 265,
+      "Diversity": 0.43328912466843506
+    },
+    {
+      "Iteration": 266,
+      "Diversity": 0.4665340406719718
+    },
+    {
+      "Iteration": 267,
+      "Diversity": 0.4832007073386388
+    },
+    {
+      "Iteration": 268,
+      "Diversity": 0.40442086648983183
+    },
+    {
+      "Iteration": 269,
+      "Diversity": 0.4607869142351902
+    },
+    {
+      "Iteration": 270,
+      "Diversity": 0.430238726790451
+    },
+    {
+      "Iteration": 271,
+      "Diversity": 0.4723695844385499
+    },
+    {
+      "Iteration": 272,
+      "Diversity": 0.42502210433244947
+    },
+    {
+      "Iteration": 273,
+      "Diversity": 0.4380636604774535
+    },
+    {
+      "Iteration": 274,
+      "Diversity": 0.41370468611847944
+    },
+    {
+      "Iteration": 275,
+      "Diversity": 0.44000884173298016
+    },
+    {
+      "Iteration": 276,
+      "Diversity": 0.4865163572060131
+    },
+    {
+      "Iteration": 277,
+      "Diversity": 0.4480548187444738
+    },
+    {
+      "Iteration": 278,
+      "Diversity": 0.4900088417329796
+    },
+    {
+      "Iteration": 279,
+      "Diversity": 0.46047745358090175
+    },
+    {
+      "Iteration": 280,
+      "Diversity": 0.4312997347480108
+    },
+    {
+      "Iteration": 281,
+      "Diversity": 0.47816091954023054
+    },
+    {
+      "Iteration": 282,
+      "Diversity": 0.4724137931034485
+    },
+    {
+      "Iteration": 283,
+      "Diversity": 0.44274977895667555
+    },
+    {
+      "Iteration": 284,
+      "Diversity": 0.4793545534924848
+    },
+    {
+      "Iteration": 285,
+      "Diversity": 0.4458885941644565
+    },
+    {
+      "Iteration": 286,
+      "Diversity": 0.4335101679929269
+    },
+    {
+      "Iteration": 287,
+      "Diversity": 0.4469496021220158
+    },
+    {
+      "Iteration": 288,
+      "Diversity": 0.42515473032714435
+    },
+    {
+      "Iteration": 289,
+      "Diversity": 0.4597259062776301
+    },
+    {
+      "Iteration": 290,
+      "Diversity": 0.4420866489832005
+    },
+    {
+      "Iteration": 291,
+      "Diversity": 0.4631741821396993
+    },
+    {
+      "Iteration": 292,
+      "Diversity": 0.4871352785145888
+    },
+    {
+      "Iteration": 293,
+      "Diversity": 0.41312997347480157
+    },
+    {
+      "Iteration": 294,
+      "Diversity": 0.424403183023873
+    },
+    {
+      "Iteration": 295,
+      "Diversity": 0.4376657824933686
+    },
+    {
+      "Iteration": 296,
+      "Diversity": 0.45459770114942544
+    },
+    {
+      "Iteration": 297,
+      "Diversity": 0.4216180371352786
+    },
+    {
+      "Iteration": 298,
+      "Diversity": 0.4298850574712641
+    },
+    {
+      "Iteration": 299,
+      "Diversity": 0.4376657824933687
+    },
+    {
+      "Iteration": 300,
+      "Diversity": 0.4440760389036252
+    },
+    {
+      "Iteration": 301,
+      "Diversity": 0.47763041556145064
+    },
+    {
+      "Iteration": 302,
+      "Diversity": 0.44350132625994676
+    },
+    {
+      "Iteration": 303,
+      "Diversity": 0.39513704686118434
+    },
+    {
+      "Iteration": 304,
+      "Diversity": 0.45844385499557877
+    },
+    {
+      "Iteration": 305,
+      "Diversity": 0.47360742705570275
+    },
+    {
+      "Iteration": 306,
+      "Diversity": 0.4397877984084883
+    },
+    {
+      "Iteration": 307,
+      "Diversity": 0.4793987621573828
+    },
+    {
+      "Iteration": 308,
+      "Diversity": 0.43629531388152104
+    },
+    {
+      "Iteration": 309,
+      "Diversity": 0.4621573828470383
+    },
+    {
+      "Iteration": 310,
+      "Diversity": 0.466136162687887
+    },
+    {
+      "Iteration": 311,
+      "Diversity": 0.43797524314765696
+    },
+    {
+      "Iteration": 312,
+      "Diversity": 0.4674182139699382
+    },
+    {
+      "Iteration": 313,
+      "Diversity": 0.4695844385499557
+    },
+    {
+      "Iteration": 314,
+      "Diversity": 0.43125552608311213
+    },
+    {
+      "Iteration": 315,
+      "Diversity": 0.452431476569408
+    },
+    {
+      "Iteration": 316,
+      "Diversity": 0.4721043324491597
+    },
+    {
+      "Iteration": 317,
+      "Diversity": 0.48740053050397936
+    },
+    {
+      "Iteration": 318,
+      "Diversity": 0.4409372236958445
+    },
+    {
+      "Iteration": 319,
+      "Diversity": 0.4627763041556143
+    },
+    {
+      "Iteration": 320,
+      "Diversity": 0.47869142351900973
+    },
+    {
+      "Iteration": 321,
+      "Diversity": 0.4714412024756849
+    },
+    {
+      "Iteration": 322,
+      "Diversity": 0.4479221927497789
+    },
+    {
+      "Iteration": 323,
+      "Diversity": 0.4971706454465079
+    },
+    {
+      "Iteration": 324,
+      "Diversity": 0.4572060123784263
+    },
+    {
+      "Iteration": 325,
+      "Diversity": 0.44602122015915124
+    },
+    {
+      "Iteration": 326,
+      "Diversity": 0.46445623342175135
+    },
+    {
+      "Iteration": 327,
+      "Diversity": 0.48068081343943386
+    },
+    {
+      "Iteration": 328,
+      "Diversity": 0.4691423519009724
+    },
+    {
+      "Iteration": 329,
+      "Diversity": 0.45884173297966385
+    },
+    {
+      "Iteration": 330,
+      "Diversity": 0.4721043324491597
+    },
+    {
+      "Iteration": 331,
+      "Diversity": 0.45627763041556185
+    },
+    {
+      "Iteration": 332,
+      "Diversity": 0.42851458885941685
+    },
+    {
+      "Iteration": 333,
+      "Diversity": 0.4935897435897436
+    },
+    {
+      "Iteration": 334,
+      "Diversity": 0.4199381078691425
+    },
+    {
+      "Iteration": 335,
+      "Diversity": 0.46666666666666673
+    },
+    {
+      "Iteration": 336,
+      "Diversity": 0.4725906277630417
+    },
+    {
+      "Iteration": 337,
+      "Diversity": 0.48474801061007966
+    },
+    {
+      "Iteration": 338,
+      "Diversity": 0.46825817860300617
+    },
+    {
+      "Iteration": 339,
+      "Diversity": 0.4717506631299727
+    },
+    {
+      "Iteration": 340,
+      "Diversity": 0.409814323607427
+    },
+    {
+      "Iteration": 341,
+      "Diversity": 0.45791335101679964
+    },
+    {
+      "Iteration": 342,
+      "Diversity": 0.4848364279398763
+    },
+    {
+      "Iteration": 343,
+      "Diversity": 0.4898320070733865
+    },
+    {
+      "Iteration": 344,
+      "Diversity": 0.47175066312997355
+    },
+    {
+      "Iteration": 345,
+      "Diversity": 0.47303271441202416
+    },
+    {
+      "Iteration": 346,
+      "Diversity": 0.45733863837312144
+    },
+    {
+      "Iteration": 347,
+      "Diversity": 0.46321839080459803
+    },
+    {
+      "Iteration": 348,
+      "Diversity": 0.4641909814323608
+    },
+    {
+      "Iteration": 349,
+      "Diversity": 0.4820070733863839
+    },
+    {
+      "Iteration": 350,
+      "Diversity": 0.4465959328028296
+    },
+    {
+      "Iteration": 351,
+      "Diversity": 0.42882404951370456
+    },
+    {
+      "Iteration": 352,
+      "Diversity": 0.4558797524314766
+    },
+    {
+      "Iteration": 353,
+      "Diversity": 0.47555260831122886
+    },
+    {
+      "Iteration": 354,
+      "Diversity": 0.4604332449160035
+    },
+    {
+      "Iteration": 355,
+      "Diversity": 0.44535809018567546
+    },
+    {
+      "Iteration": 356,
+      "Diversity": 0.47590627763041515
+    },
+    {
+      "Iteration": 357,
+      "Diversity": 0.4660919540229883
+    },
+    {
+      "Iteration": 358,
+      "Diversity": 0.4564102564102559
+    },
+    {
+      "Iteration": 359,
+      "Diversity": 0.4742705570291781
+    },
+    {
+      "Iteration": 360,
+      "Diversity": 0.4402298850574714
+    },
+    {
+      "Iteration": 361,
+      "Diversity": 0.4377541998231648
+    },
+    {
+      "Iteration": 362,
+      "Diversity": 0.41613616268788745
+    },
+    {
+      "Iteration": 363,
+      "Diversity": 0.4305923961096378
+    },
+    {
+      "Iteration": 364,
+      "Diversity": 0.4906277630415565
+    },
+    {
+      "Iteration": 365,
+      "Diversity": 0.4721485411140584
+    },
+    {
+      "Iteration": 366,
+      "Diversity": 0.453315649867374
+    },
+    {
+      "Iteration": 367,
+      "Diversity": 0.47011494252873526
+    },
+    {
+      "Iteration": 368,
+      "Diversity": 0.46503094606542866
+    },
+    {
+      "Iteration": 369,
+      "Diversity": 0.4092838196286473
+    },
+    {
+      "Iteration": 370,
+      "Diversity": 0.4132183908045977
+    },
+    {
+      "Iteration": 371,
+      "Diversity": 0.42820512820512807
+    },
+    {
+      "Iteration": 372,
+      "Diversity": 0.4606542882404947
+    },
+    {
+      "Iteration": 373,
+      "Diversity": 0.42833775419982284
+    },
+    {
+      "Iteration": 374,
+      "Diversity": 0.4523872679045095
+    },
+    {
+      "Iteration": 375,
+      "Diversity": 0.4845711759504859
+    },
+    {
+      "Iteration": 376,
+      "Diversity": 0.43589743589743607
+    },
+    {
+      "Iteration": 377,
+      "Diversity": 0.3733863837312111
+    },
+    {
+      "Iteration": 378,
+      "Diversity": 0.38585322723253757
+    },
+    {
+      "Iteration": 379,
+      "Diversity": 0.4639699381078693
+    },
+    {
+      "Iteration": 380,
+      "Diversity": 0.45610079575596807
+    },
+    {
+      "Iteration": 381,
+      "Diversity": 0.42188328912466827
+    },
+    {
+      "Iteration": 382,
+      "Diversity": 0.4409372236958445
+    },
+    {
+      "Iteration": 383,
+      "Diversity": 0.38183023872679006
+    },
+    {
+      "Iteration": 384,
+      "Diversity": 0.44818744473916855
+    },
+    {
+      "Iteration": 385,
+      "Diversity": 0.43925729442970796
+    },
+    {
+      "Iteration": 386,
+      "Diversity": 0.46511936339522525
+    },
+    {
+      "Iteration": 387,
+      "Diversity": 0.46003536693191865
+    },
+    {
+      "Iteration": 388,
+      "Diversity": 0.47497789566755044
+    },
+    {
+      "Iteration": 389,
+      "Diversity": 0.45291777188328913
+    },
+    {
+      "Iteration": 390,
+      "Diversity": 0.46808134394341344
+    },
+    {
+      "Iteration": 391,
+      "Diversity": 0.4170203359858528
+    },
+    {
+      "Iteration": 392,
+      "Diversity": 0.4721485411140586
+    },
+    {
+      "Iteration": 393,
+      "Diversity": 0.479708222811671
+    },
+    {
+      "Iteration": 394,
+      "Diversity": 0.457824933687003
+    },
+    {
+      "Iteration": 395,
+      "Diversity": 0.45707338638373124
+    },
+    {
+      "Iteration": 396,
+      "Diversity": 0.4875773651635724
+    },
+    {
+      "Iteration": 397,
+      "Diversity": 0.4602122015915116
+    },
+    {
+      "Iteration": 398,
+      "Diversity": 0.45711759504862975
+    },
+    {
+      "Iteration": 399,
+      "Diversity": 0.4518125552608315
+    },
+    {
+      "Iteration": 400,
+      "Diversity": 0.4352343059239617
+    },
+    {
+      "Iteration": 401,
+      "Diversity": 0.41679929266136184
+    },
+    {
+      "Iteration": 402,
+      "Diversity": 0.4335543766578248
+    },
+    {
+      "Iteration": 403,
+      "Diversity": 0.47639257294429715
+    },
+    {
+      "Iteration": 404,
+      "Diversity": 0.48956675508399633
+    },
+    {
+      "Iteration": 405,
+      "Diversity": 0.47895667550839977
+    },
+    {
+      "Iteration": 406,
+      "Diversity": 0.442307692307692
+    },
+    {
+      "Iteration": 407,
+      "Diversity": 0.4370910698496911
+    },
+    {
+      "Iteration": 408,
+      "Diversity": 0.4639257294429707
+    },
+    {
+      "Iteration": 409,
+      "Diversity": 0.44425287356321824
+    },
+    {
+      "Iteration": 410,
+      "Diversity": 0.45048629531388157
+    },
+    {
+      "Iteration": 411,
+      "Diversity": 0.49867374005305043
+    },
+    {
+      "Iteration": 412,
+      "Diversity": 0.480680813439434
+    },
+    {
+      "Iteration": 413,
+      "Diversity": 0.4679045092838197
+    },
+    {
+      "Iteration": 414,
+      "Diversity": 0.44274977895667567
+    },
+    {
+      "Iteration": 415,
+      "Diversity": 0.470203359858532
+    },
+    {
+      "Iteration": 416,
+      "Diversity": 0.42334217506631305
+    },
+    {
+      "Iteration": 417,
+      "Diversity": 0.4400530503978781
+    },
+    {
+      "Iteration": 418,
+      "Diversity": 0.41852343059239605
+    },
+    {
+      "Iteration": 419,
+      "Diversity": 0.4823165340406719
+    },
+    {
+      "Iteration": 420,
+      "Diversity": 0.46242263483642865
+    },
+    {
+      "Iteration": 421,
+      "Diversity": 0.48479221927497823
+    },
+    {
+      "Iteration": 422,
+      "Diversity": 0.4109637488947834
+    },
+    {
+      "Iteration": 423,
+      "Diversity": 0.44867374005305055
+    },
+    {
+      "Iteration": 424,
+      "Diversity": 0.47290008841732945
+    },
+    {
+      "Iteration": 425,
+      "Diversity": 0.4673740053050397
+    },
+    {
+      "Iteration": 426,
+      "Diversity": 0.46728558797524294
+    },
+    {
+      "Iteration": 427,
+      "Diversity": 0.43616268788682594
+    },
+    {
+      "Iteration": 428,
+      "Diversity": 0.4496905393457115
+    },
+    {
+      "Iteration": 429,
+      "Diversity": 0.47900088417329834
+    },
+    {
+      "Iteration": 430,
+      "Diversity": 0.46206896551724125
+    },
+    {
+      "Iteration": 431,
+      "Diversity": 0.4672413793103447
+    },
+    {
+      "Iteration": 432,
+      "Diversity": 0.4751547303271443
+    },
+    {
+      "Iteration": 433,
+      "Diversity": 0.4412024756852345
+    },
+    {
+      "Iteration": 434,
+      "Diversity": 0.4383289124668436
+    },
+    {
+      "Iteration": 435,
+      "Diversity": 0.42382847038019505
+    },
+    {
+      "Iteration": 436,
+      "Diversity": 0.42404951370468624
+    },
+    {
+      "Iteration": 437,
+      "Diversity": 0.456498673740053
+    },
+    {
+      "Iteration": 438,
+      "Diversity": 0.419230769230769
+    },
+    {
+      "Iteration": 439,
+      "Diversity": 0.43859416445623306
+    },
+    {
+      "Iteration": 440,
+      "Diversity": 0.46861184792219307
+    },
+    {
+      "Iteration": 441,
+      "Diversity": 0.4186560565870908
+    },
+    {
+      "Iteration": 442,
+      "Diversity": 0.47130857648099034
+    },
+    {
+      "Iteration": 443,
+      "Diversity": 0.4485853227232535
+    },
+    {
+      "Iteration": 444,
+      "Diversity": 0.4767462422634844
+    },
+    {
+      "Iteration": 445,
+      "Diversity": 0.48669319186560556
+    },
+    {
+      "Iteration": 446,
+      "Diversity": 0.4988063660477453
+    },
+    {
+      "Iteration": 447,
+      "Diversity": 0.43956675508399645
+    },
+    {
+      "Iteration": 448,
+      "Diversity": 0.4895667550839969
+    },
+    {
+      "Iteration": 449,
+      "Diversity": 0.44597701149425295
+    },
+    {
+      "Iteration": 450,
+      "Diversity": 0.45866489832007024
+    },
+    {
+      "Iteration": 451,
+      "Diversity": 0.4514146772767466
+    },
+    {
+      "Iteration": 452,
+      "Diversity": 0.4540671971706455
+    },
+    {
+      "Iteration": 453,
+      "Diversity": 0.436206896551724
+    },
+    {
+      "Iteration": 454,
+      "Diversity": 0.4147656940760391
+    },
+    {
+      "Iteration": 455,
+      "Diversity": 0.4847922192749783
+    },
+    {
+      "Iteration": 456,
+      "Diversity": 0.4516799292661366
+    },
+    {
+      "Iteration": 457,
+      "Diversity": 0.46127320954907153
+    },
+    {
+      "Iteration": 458,
+      "Diversity": 0.47776304155614513
+    },
+    {
+      "Iteration": 459,
+      "Diversity": 0.48342175066312987
+    },
+    {
+      "Iteration": 460,
+      "Diversity": 0.47320954907161783
+    },
+    {
+      "Iteration": 461,
+      "Diversity": 0.452475685234306
+    },
+    {
+      "Iteration": 462,
+      "Diversity": 0.4633510167992927
+    },
+    {
+      "Iteration": 463,
+      "Diversity": 0.43412908930150257
+    },
+    {
+      "Iteration": 464,
+      "Diversity": 0.4321839080459773
+    },
+    {
+      "Iteration": 465,
+      "Diversity": 0.47687886825817877
+    },
+    {
+      "Iteration": 466,
+      "Diversity": 0.42029177718832855
+    },
+    {
+      "Iteration": 467,
+      "Diversity": 0.449381078691424
+    },
+    {
+      "Iteration": 468,
+      "Diversity": 0.45362511052166266
+    },
+    {
+      "Iteration": 469,
+      "Diversity": 0.4651193633952256
+    },
+    {
+      "Iteration": 470,
+      "Diversity": 0.44053934571175973
+    },
+    {
+      "Iteration": 471,
+      "Diversity": 0.4258178603006187
+    },
+    {
+      "Iteration": 472,
+      "Diversity": 0.48094606542882423
+    },
+    {
+      "Iteration": 473,
+      "Diversity": 0.45384615384615373
+    },
+    {
+      "Iteration": 474,
+      "Diversity": 0.44473916887710063
+    },
+    {
+      "Iteration": 475,
+      "Diversity": 0.44845269672855925
+    },
+    {
+      "Iteration": 476,
+      "Diversity": 0.4358090185676392
+    },
+    {
+      "Iteration": 477,
+      "Diversity": 0.4553050397877987
+    },
+    {
+      "Iteration": 478,
+      "Diversity": 0.45649867374005315
+    },
+    {
+      "Iteration": 479,
+      "Diversity": 0.4729885057471264
+    },
+    {
+      "Iteration": 480,
+      "Diversity": 0.4152961980548187
+    },
+    {
+      "Iteration": 481,
+      "Diversity": 0.467152961980548
+    },
+    {
+      "Iteration": 482,
+      "Diversity": 0.4969053934571178
+    },
+    {
+      "Iteration": 483,
+      "Diversity": 0.47807250221043296
+    },
+    {
+      "Iteration": 484,
+      "Diversity": 0.4275419982316534
+    },
+    {
+      "Iteration": 485,
+      "Diversity": 0.43364279398762107
+    },
+    {
+      "Iteration": 486,
+      "Diversity": 0.3924403183023873
+    },
+    {
+      "Iteration": 487,
+      "Diversity": 0.4226790450928382
+    },
+    {
+      "Iteration": 488,
+      "Diversity": 0.49129089301503137
+    },
+    {
+      "Iteration": 489,
+      "Diversity": 0.44916003536693205
+    },
+    {
+      "Iteration": 490,
+      "Diversity": 0.4896993810786919
+    },
+    {
+      "Iteration": 491,
+      "Diversity": 0.39053934571175963
+    },
+    {
+      "Iteration": 492,
+      "Diversity": 0.47506631299734764
+    },
+    {
+      "Iteration": 493,
+      "Diversity": 0.41706454465075105
+    },
+    {
+      "Iteration": 494,
+      "Diversity": 0.4862068965517243
+    },
+    {
+      "Iteration": 495,
+      "Diversity": 0.4433244916003544
+    },
+    {
+      "Iteration": 496,
+      "Diversity": 0.4629089301503097
+    },
+    {
+      "Iteration": 497,
+      "Diversity": 0.4515473032714412
+    },
+    {
+      "Iteration": 498,
+      "Diversity": 0.4909372236958447
+    },
+    {
+      "Iteration": 499,
+      "Diversity": 0.4816976127320955
+    },
+    {
+      "Iteration": 500,
+      "Diversity": 0.4785145888594161
+    }
+  ],
+  "Config": {
+    "Name": "crossings",
+    "TimeoutSeconds": null,
+    "ProgressInterval": 1,
+    "MaxIterations": 500,
+    "AlgorithmType": 4,
+    "Seed": 12345678,
+    "SimilarityMeasure": {}
+  },
+  "Problem": {
+    "ProblemType": 2
+  },
+  "ProblemInstance": {
+    "Name": "berlin52",
+    "ProblemType": 2
+  }
+}
