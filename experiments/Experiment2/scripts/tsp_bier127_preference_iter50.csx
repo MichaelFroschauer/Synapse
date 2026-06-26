@@ -2,11 +2,11 @@
 // Algorithm: RAPGA | Problem: bier127 | Seed: 12345678
 
 // BEGIN NAME
-TSP bier127 Preference
+TSP bier127 Preference Iteration 50
 // END NAME
 // BEGIN SCRIPT
 async (g) => {
-    if (g.Iteration <= 1)
+    if (g.Iteration == 50)
     {
         //var solSim = new TspSolutionSimilarity();
         var solSim = new TspSolutionSequenceSimilarity();
